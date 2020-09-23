@@ -1,0 +1,69 @@
+@import '../_mixins', '../_variables'
+
+header 
+    position: fixed
+    width: 100vw
+
+.navbar 
+    +flexDisplay(space-between)
+    background-color: $GrayColor
+    a 
+        display: inline-block
+        font-size: 75%
+        text-transform: uppercase
+        padding: $lgSpace $mdSpace
+        color: $HeaderTextColor
+    &__left, &__right 
+        display: flex
+        align-items: center
+    &__left
+        & > a:first-child
+            padding: 0 $mdSpace
+        &-logo 
+            width: 40px 
+            height: 40px
+            object-fit: contain
+        &-links
+            a 
+                padding: $lgSpace $mdSpace $mdSpace
+                border-bottom: 5px solid $GrayColor
+                transition: 0.5s
+            &--active, a:hover 
+                color: white !important
+                border-bottom: 5px solid $PrimaryColor !important
+    &__right 
+        a:hover 
+            opacity: 0.9
+        &-signin a
+            padding: 0 $mdSpace
+            display: flex 
+            align-items: center
+            p 
+                margin-left: $smSpace
+        &-download a
+            background-color: $PrimaryColor
+            color: white
+        
+.menu 
+    +flexDisplay(space-between)
+    align-items: center
+    padding: 25px 0
+    &__left
+        &-link 
+            cursor: pointer
+            color: $TextColor
+            transition: 0.5s
+            margin-right: $mdSpace
+            &--active, &:hover 
+                color: white
+    &__right
+        display: flex
+        input, button
+            border: none 
+            outline: none 
+            background-color: $GrayColor
+        input
+            width: 250px
+            padding: $mdSpace $lgSpace $mdSpace 0
+        button
+            padding: 0 $lgSpace
