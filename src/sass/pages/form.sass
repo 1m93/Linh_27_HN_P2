@@ -1,0 +1,78 @@
+.Login, .Signup 
+    min-height: 100vh
+    +flexDisplay(center)
+    align-items: center
+    .form
+        width: 480px
+        background: $FormColor
+        padding: 50px
+        &__logo
+            text-align: center
+            margin-bottom: $lgSpace
+            img 
+                width: 50px
+                height: 50px 
+                object-fit: contain
+        &__title, &__button 
+            text-align: center
+            text-transform: uppercase
+            font-size: 0.85em 
+            margin-bottom: $xlSpace
+            font-weight: 600
+        &__name 
+            +flexDisplay(space-between)
+            & > div 
+                flex-basis: 48.6%
+        &__option
+            margin-bottom: $xlSpace
+            font-size: 0.9em 
+            +flexDisplay(space-between)
+            align-items: center
+            a, label 
+                color: $TextColor
+            a:hover 
+                color: white 
+                transition: 0.5s
+            &-remember
+                display: flex 
+                align-items: center 
+                span 
+                    padding: 0
+                    margin-right: $xsSpace
+                    svg path 
+                        color: $TextColor
+        &__policy 
+            margin-bottom: $xlSpace
+            font-size: 0.9em 
+            display: flex
+            align-items: center
+            label
+                color: $TextColor
+                a 
+                    margin-left: $xsSpace
+            span 
+                padding: 0
+                margin-right: $xsSpace
+                svg path
+                    color: $TextColor
+        &__button 
+            display: block
+            padding: $mdSpace 0
+            background-color: $GrayColor
+            border-radius: 3px
+            transition: 0.1s linear
+            &--active 
+                background-color: $PrimaryColor
+            &:hover 
+                opacity: 0.8 
+        &__signup 
+            text-align: center
+            span, a 
+                font-size: 0.9em
+            span 
+                color: $TextColor
+                margin-right: $smSpace
+        &__goback
+            font-size: 0.9em
+            text-align: center 
+            margin-top: $xsSpace

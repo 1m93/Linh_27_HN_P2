@@ -34,11 +34,7 @@ function HomePage() {
 	if (error) {
 		return <div className="error">{error}</div>;
 	} else if (loading) {
-		return (
-			<div>
-				<LinearProgress className="loadingbar" />
-			</div>
-		);
+		return <LinearProgress className="loadingbar" />;
 	} else {
 		return (
 			<div className="HomePage">

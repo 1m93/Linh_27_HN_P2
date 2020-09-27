@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "./header/Navbar";
-import Menu from './header/Menu'
+import Menu from "./header/Menu";
 
-function Header() {
+function Header(props) {
 	return (
 		<header>
 			<Navbar />
-			<Menu />
+			<Menu title={props.title} />
 		</header>
 	);
 }

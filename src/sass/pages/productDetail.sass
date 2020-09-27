@@ -1,0 +1,147 @@
+.ProductDetail
+    main 
+        @extend .endContent
+    
+    .banner 
+        height: 50vh 
+        background-size: cover !important
+    
+    .detail
+        margin-top: 0
+        background-color: $BackgroundColor
+        & > div 
+            +flexDisplay(space-between)
+            margin-top: 3em
+            & > div:first-child
+                flex-basis: 20%
+                font-size: 1.2em
+            & > div:nth-child(2)
+                flex-basis: 76%
+
+        &__info 
+            margin-top: 0
+            &-image 
+                & > div
+                    margin-top: -70%
+                    padding-bottom: 140%
+                    background-size: cover !important
+            &-content
+                +flexDisplay(space-between)
+                padding-bottom: 2rem 
+                border-bottom: 1px solid $GrayColor
+                .content
+                    flex-basis: 66%
+                    &__name 
+                        font-size: 2em
+                    &__publisher 
+                        margin: $smSpace 0 $xlSpace
+                        color: $TextColor
+                    &__others 
+                        +flexDisplay(space-between)
+                        p 
+                            margin-bottom: $xsSpace
+                        span 
+                            color: $TextColor
+                .shopping
+                    flex-basis: 27%
+                    &__info 
+                        margin-bottom: $lgSpace
+                        +flexDisplay(space-between)
+                        align-items: center
+                        &-rating
+                            display: flex 
+                            align-items: center
+                    &__share 
+                        margin-bottom: $mdSpace
+                        +flexDisplay(space-between)
+                        align-items: center
+                        div
+                            color: $TextColor
+                        &-buttons
+                            span
+                                cursor: pointer
+                                margin-left: $smSpace
+                    &__buttons
+                        +flexDisplay(space-between)
+                        a
+                            padding: $smSpace 0
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            background: $PrimaryColor
+                            transition: 0.5s
+                            &:hover, &:hover svg>*
+                                color: $PrimaryColor
+                                background: white
+                        .buy 
+                            text-transform: uppercase
+                            flex-basis: 80%
+                        .addToCart
+                            flex-basis: 19%     
+
+        &__about 
+            &-content
+                color: $TextColor  
+                line-height: 1.4em    
+
+        &__video
+            &-frame 
+                width: 100%
+                position: relative  
+                padding-bottom: 40%
+                iframe
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+
+        &__spec
+            &-list 
+                background: $GrayColor
+                padding: 50px
+                +flexDisplay(space-between)
+                .spec 
+                    flex-basis: 47%
+                    &__title 
+                        color: $TextColor
+                        font-weight: 600
+                        margin-bottom: $mdSpace
+                    &__list 
+                        &-item 
+                            margin-top: $xlSpace
+                            p, span 
+                                line-height: 1.3em
+                            p 
+                                color: $TextColor
+
+        &__rating 
+            &-control 
+                +flexDisplay(space-between)
+                align-items: center
+                & > div  
+                    display: flex 
+                    align-items: center
+                &-rate
+                    p
+                        margin-right: $mdSpace
+                    .MuiRating-icon
+                        color: $PrimaryColor
+                    .MuiRating-iconEmpty 
+                        color: $TextColor
+
+        &__comment 
+            &-list 
+                background-color: white
+                padding: $lgSpace
+
+        &__related
+            &-list
+                .listProducts
+                    @extend .endContent
+                    &__list 
+                        display: flex
+                        margin: 0 -1% 0 -1%
+                        &-item 
+                            flex-basis: 23%
+                            margin: 0 1%

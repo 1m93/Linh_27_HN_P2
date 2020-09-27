@@ -6,7 +6,7 @@ function ProductBanner(props) {
 	const [product] = useState(props.product.length > 0 ? props.product[0] : "");
 
 	return (
-		<div to="/" className="productBanner">
+		<div className="productBanner">
 			<div className="productBanner__title title">{props.title}</div>
 			<div
 				className="productBanner__detail"
@@ -19,7 +19,10 @@ function ProductBanner(props) {
 						{product.name}
 					</div>
 					<div className="productBanner__detail-content-des">{product.des}</div>
-					<Link to="/" className="productBanner__detail-content-btn">
+					<Link
+						to={`/products/${product.id}`}
+						className="productBanner__detail-content-btn"
+					>
 						Learn more
 					</Link>
 				</div>

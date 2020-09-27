@@ -5,7 +5,6 @@
     padding: 0
     box-sizing: border-box
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: white
 
 body 
     background-color: $BackgroundColor
@@ -13,6 +12,9 @@ body
 .container
     width: 75%
     margin: auto
+
+p, span, a, div, button, input
+    color: white
 
 a 
     text-decoration: none
@@ -24,6 +26,10 @@ main
     background: black !important
     & > div 
         background: $PrimaryColor
+
+.loadingCircle 
+    circle
+        color: $PrimaryColor
 
 .error 
     text-transform: uppercase
@@ -37,4 +43,4 @@ main
     font-size: 1.3em
     margin-bottom: 1rem
 
-@import 'components/header', 'components/footer', 'pages/homepage', 'pages/browsepage'
+@import 'components/header', 'components/footer', 'pages/homepage', 'pages/browsepage', 'pages/productDetail', 'pages/form'

@@ -1,424 +1,906 @@
 {
-	"category": [
-		{
-			"id": 1,
-			"name": "Action"
-		},
-		{
-			"id": 2,
-			"name": "Adventure"
-		},
-		{
-			"id": 3,
-			"name": "Puzzle"
-		},
-		{
-			"id": 4,
-			"name": "Racing"
-		},
-		{
-			"id": 5,
-			"name": "RPG"
-		},
-		{
-			"id": 6,
-			"name": "Shooter"
-		},
-		{
-			"id": 7,
-			"name": "Strategy"
-		},
-		{
-			"id": 8,
-			"name": "Survival"
-		},
-		{
-			"id": 9,
-			"name": "FPS"
-		},
-		{
-			"id": 10,
-			"name": "Sport"
-		}
-	],
-	"features": [
-		{
-			"id": 1,
-			"name": "Controller Support"
-		},
-		{
-			"id": 2,
-			"name": "Co-op"
-		},
-		{
-			"id": 3,
-			"name": "Single Player"
-		},
-		{
-			"id": 4,
-			"name": "Multiplayer"
-		}
-	],
-	"platform": [
-		{
-			"id": 1,
-			"name": "Windows 10"
-		},
-		{
-			"id": 2,
-			"name": "Mac OS"
-		}
-	],
-	"products": [
-		{
-			"id": 1,
-			"name": "Rocket league",
-			"banner": "http://localhost:3001/banners/rocket_league.jpg",
-			"cover": "http://localhost:3001/products/rocket_league.jpg",
-			"des": "Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition.",
-			"price": 7.99,
-			"publisher": "Psyonix LLC",
-			"rating": 4.5,
-			"platform": "Windows 10",
-			"sold": 3000,
-			"category": "Racing, Action",
-			"features": "Co-op, Multiplayer, Single Player"
-		},
-		{
-			"id": 2,
-			"name": "STAR WARS™: Squadrons",
-			"banner": "http://localhost:3001/banners/starwars_squardons.jpg",
-			"cover": "http://localhost:3001/products/starwars_squardons.jpg",
-			"des": "Pre-order STAR WARS™: Squadrons to get the New Republic Recruit and Imperial Ace cosmetic items! Feel the adrenaline of first-person multiplayer space dogfights alongside your squadron, and buckle up in a thrilling STAR WARS™ campaign.",
-			"price": 39.99,
-			"publisher": "Electronic Arts",
-			"rating": 4.0,
-			"platform": "Windows 10",
-			"sold": 3400,
-			"category": "Action, Adventure, RPG",
-			"features": "Controller Support, Multiplayer"
-		},
-		{
-			"id": 3,
-			"name": "CastleStorm II",
-			"banner": "http://localhost:3001/banners/castlestorm_ii.jpg",
-			"cover": "http://localhost:3001/products/castlestorm_ii.jpg",
-			"des": "What is CastleStorm II, you ask? Better question: What ISN’T it?! Projectile warfare. Tower defense. Brutal combat. Whimsical characters. Epic campaigns of kingdom-conquering tactical strategy. ZOMBIE SHEEP! Gaming’s greatest super-duper genre mashup awaits.",
-			"price": 7.99,
-			"publisher": "Zen Studios",
-			"rating": 4.0,
-			"platform": "Windows 10",
-			"sold": 2000,
-			"category": "Strategy",
-			"features": "Co-op, Single Player"
-		},
-		{
-			"id": 4,
-			"name": "Crysis Remastered",
-			"banner": "http://localhost:3001/banners/crysis_remastered.jpg",
-			"cover": "http://localhost:3001/products/crysis_remastered.jpg",
-			"des": "The classic first-person shooter from Crytek is back with the action-packed gameplay, sandbox world, and thrilling epic battles you loved the first time around – now with remastered graphics optimized for a new generation of hardware.",
-			"price": 11.99,
-			"publisher": "Crytek",
-			"rating": 5.0,
-			"platform": "Windows 10",
-			"sold": 2500,
-			"category": "FPS, Action, Shooter",
-			"features": "Multiplayer, Single Player"
-		},
-		{
-			"id": 5,
-			"name": "Tony Hawk's™ Pro Skater™ 1 + 2",
-			"banner": "http://localhost:3001/banners/tony_hawks_pro_skater_1_2.jpg",
-			"cover": "http://localhost:3001/products/tony_hawks_pro_skater_1_2.jpg",
-			"des": "Play the fully-remastered Tony Hawk’s™ Pro Skater™ & Tony Hawk’s™ Pro Skater™ 2 games in one epic collection, rebuilt from the ground up in incredible HD.",
-			"price": 39.99,
-			"publisher": "Activision",
-			"rating": 4.5,
-			"platform": "Windows 10",
-			"sold": 2900,
-			"category": "Sport",
-			"features": "Controller Support, Single Player"
-		},
-		{
-			"id": 6,
-			"name": "Path of Exile",
-			"banner": "http://localhost:3001/banners/path_of_exile.jpg",
-			"cover": "http://localhost:3001/products/path_of_exile.jpg",
-			"des": "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power to exact your revenge against those who wronged you. Created by hardcore gamers, Path of Exile is an online Action RPG set in a dark fantasy world.",
-			"price": 0,
-			"publisher": "Grinding Gear Games",
-			"rating": 4.5,
-			"platform": "Windows 10",
-			"sold": 1900,
-			"category": "Action, Adventure, Strategy",
-			"features": "Co-op, Multiplayer, Single Player"
-		},
-		{
-			"id": 7,
-			"name": "Heroes & Generals WWII",
-			"banner": "http://localhost:3001/banners/heroes_generals.jpg",
-			"cover": "http://localhost:3001/products/heroes_generals.jpg",
-			"des": "Shoot, blow sh!t up, fly or bark orders in the ultimate Free-to-Play, large scale, multiplayer, shooter experience. Thousands of players in multiple battles fighting one massive war of nations. The first to capture 15 cities takes the glory.",
-			"price": 0,
-			"publisher": "RETO MOTO",
-			"rating": 4.0,
-			"platform": "Windows 10, Mac OS",
-			"sold": 3000,
-			"category": "Shooter, FPS, Action",
-			"features": "Controller Support, Single Player"
-		},
-		{
-			"id": 8,
-			"name": "Surgeon Simulator 2",
-			"banner": "http://localhost:3001/banners/surgeon_simulator_2.jpg",
-			"cover": "http://localhost:3001/products/surgeon_simulator_2.jpg",
-			"des": "It’s a good day to save lives, but you can’t save them all alone. Now with the help of other ‘skilled’ surgeons, break the boring order of mundane medicine and embrace the chaos only a bunch of inept people can create together. Malpractice makes perfect!",
-			"price": 9.99,
-			"publisher": "Bossa Studios",
-			"rating": 3.5,
-			"platform": "Windows 10, Mac OS",
-			"sold": 1200,
-			"category": "Puzzle",
-			"features": "Single Player"
-		},
-		{
-			"id": 9,
-			"name": "Among Trees",
-			"banner": "http://localhost:3001/banners/among_trees.jpg",
-			"cover": "http://localhost:3001/products/among_trees.jpg",
-			"des": "A small vibrant survival sandbox, Among Trees is set in a colorful wilderness world teeming with life. Explore a colorful, breathing world that is filled to the brim with life. From dense forests to dark caves.",
-			"price": 7.99,
-			"publisher": "FJRD Interactive",
-			"rating": 5,
-			"platform": "Windows 10",
-			"sold": 2300,
-			"category": "Survival, Adventure",
-			"features": "Multiplayer, Co-op"
-		},
-		{
-			"id": 10,
-			"name": "Ghostrunner",
-			"banner": "http://localhost:3001/banners/ghostrunner.jpg",
-			"cover": "http://localhost:3001/products/ghostrunner.jpg",
-			"des": "Ghostrunner offers a unique single-player experience: fast-paced, violent combat, and an original setting that blends science fiction with post-apocalyptic themes. It tells the story of a world that has already ended and its inhabitants who fight to survive.",
-			"price": 23.99,
-			"publisher": "One More Level and 3D Realms",
-			"rating": 4.6,
-			"platform": "Windows 10",
-			"sold": 1500,
-			"category": "FPS, Action, Adventure",
-			"features": "Co-op, Controller Support"
-		},
-		{
-			"id": 11,
-			"name": "Football Manager 2020",
-			"banner": "http://localhost:3001/banners/football_manager_2020.jpg",
-			"cover": "http://localhost:3001/products/football_manager_2020.jpg",
-			"des": "Every decision counts in Football Manager 2020 with new features and polished game mechanics rewarding planning and progression like never before, empowering managers to develop and refine both your club’s and your own unique identity.",
-			"price": 32.99,
-			"publisher": "SEGA",
-			"rating": 4.0,
-			"platform": "Windows 10, Mac OS",
-			"sold": 2000,
-			"category": "Strategy, Sport",
-			"features": "Multiplayer"
-		},
-		{
-			"id": 12,
-			"name": "Spellbreak",
-			"banner": "http://localhost:3001/banners/spellbreak.jpg",
-			"cover": "http://localhost:3001/products/spellbreak.jpg",
-			"des": "Spellbreak is a multiplayer action-spellcasting game where you unleash your inner battlemage. Master elemental magic to fit your playstyle and cast powerful spell combinations to dominate other players across the Hollow Lands.",
-			"price": 0,
-			"publisher": "Proletariat",
-			"rating": 4.4,
-			"platform": "Windows 10",
-			"sold": 3000,
-			"category": "Action, Survival",
-			"features": "Co-op, Multiplayer"
-		},
-		{
-			"id": 13,
-			"name": "Outriders",
-			"banner": "http://localhost:3001/banners/outriders.jpg",
-			"cover": "http://localhost:3001/products/outriders.jpg",
-			"des": "Pre-order OUTRIDERS now to receive the Hell's Rangers Content Pack, which includes: • The Hell’s Rangers Male and Female Gear Sets. • The Hell’s Rangers Arsenal of 11 unique Guns. • The Hell’s Rangers Truck Mods and Decals.",
-			"price": 59.99,
-			"publisher": "Square Enix",
-			"rating": 4,
-			"platform": "Windows 10",
-			"sold": 1500,
-			"category": "Shooter, Adventure",
-			"features": "Single Player"
-		},
-		{
-			"id": 14,
-			"name": "Relicta",
-			"banner": "http://localhost:3001/banners/relicta.jpg",
-			"cover": "http://localhost:3001/products/relicta.jpg",
-			"des": "Relicta is a first-person physics-based puzzle game where you need to creatively combine magnetism and gravity to unravel the secrets of Chandra Base.",
-			"price": 8.99,
-			"publisher": "Ravenscourt",
-			"rating": 3.6,
-			"platform": "Windows 10",
-			"sold": 500,
-			"category": "Puzzle",
-			"features": "Single Player"
-		},
-		{
-			"id": 15,
-			"name": "Far Cry 6",
-			"banner": "http://localhost:3001/banners/far_cry_6.jpg",
-			"cover": "http://localhost:3001/products/far_cry_6.jpg",
-			"des": "Dive into the gritty world of a modern-day guerilla revolution to liberate a nation from a dictator and his son.",
-			"price": 43.99,
-			"publisher": "Ubisoft",
-			"rating": 4.8,
-			"platform": "Windows 10",
-			"sold": 700,
-			"category": "FPS",
-			"features": "Multiplayer"
-		},
-		{
-			"id": 16,
-			"name": "Windbound",
-			"banner": "http://localhost:3001/banners/windbound.jpg",
-			"cover": "http://localhost:3001/products/windbound.jpg",
-			"des": "The Forbidden Islands are Calling, Unlock their Secrets Shipwrecked on an island, explore, adapt and navigate the land and perilous seas to stay alive.",
-			"price": 9.99,
-			"publisher": "Deep Silver",
-			"rating": 3.9,
-			"platform": "Windows 10",
-			"sold": 500,
-			"category": "RPG, Survival",
-			"features": "Co-op"
-		},
-		{
-			"id": 17,
-			"name": "Neon Abyss",
-			"banner": "http://localhost:3001/banners/neon_abyss.jpg",
-			"cover": "http://localhost:3001/products/neon_abyss.jpg",
-			"des": "Neon Abyss is a frantic, roguelike where you run ‘n’ gun your way into the Abyss as part of the ‘Grim Squad’. Featuring unlimited item synergies and a unique dungeon evolution system, each run diversifies the experience and every choice alters the ruleset.",
-			"price": 7.99,
-			"publisher": "Team17 Digital Ltd.",
-			"rating": 4.1,
-			"platform": "Windows 10",
-			"sold": 1100,
-			"category": "Shooter",
-			"features": "Co-op"
-		},
-		{
-			"id": 18,
-			"name": "Tacoma",
-			"banner": "http://localhost:3001/banners/tacoma.jpg",
-			"cover": "http://localhost:3001/products/tacoma.jpg",
-			"des": "An Abandoned Space Station. A Mysterious AI. And You. The crew of Lunar Transfer Station Tacoma were going about their workaday lives when disaster threw them into chaos. Discover what fate awaits them in Fullbright's bold and innovative followup to Gone Home.",
-			"price": 7.99,
-			"publisher": "Fullbright",
-			"rating": 4.2,
-			"platform": "Windows 10, Mac OS",
-			"sold": 200,
-			"category": "Adventure",
-			"features": "Controller Support"
-		},
-		{
-			"id": 19,
-			"name": "Ooblets",
-			"banner": "http://localhost:3001/banners/ooblets.jpg",
-			"cover": "http://localhost:3001/products/ooblets.jpg",
-			"des": "Ooblets is a farming, creature collection, and town life game where you build up your farm, befriend townsfolk, grow ooblets, and have dance-offs.",
-			"price": 9.99,
-			"publisher": "Glumberland",
-			"rating": 3.5,
-			"platform": "Windows 10",
-			"sold": 600,
-			"category": "Adventure",
-			"features": "Co-op, Multiplayer"
-		},
-		{
-			"id": 20,
-			"name": "DEATH STRANDING",
-			"banner": "http://localhost:3001/banners/death_stranding.jpg",
-			"cover": "http://localhost:3001/products/death_stranding.jpg",
-			"des": "From legendary game creator Hideo Kojima comes an all-new, genre-defying experience. Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the disconnected remnants of our future in his hands, he embarks on a journey to reconnect the shattered world",
-			"price": 41.99,
-			"publisher": "505 Games",
-			"rating": 4.9,
-			"platform": "Windows 10",
-			"sold": 1000,
-			"category": "Adventure",
-			"features": "Co-op, Single Player"
-		},
-		{
-			"id": 21,
-			"name": "Huntdown",
-			"banner": "http://localhost:3001/banners/huntdown.jpg",
-			"cover": "http://localhost:3001/products/huntdown.jpg",
-			"des": "In the mayhem-filled streets of the future where gangs rule and cops fear to tread, only the bounty hunters can free the city from corruption. Lay waste to the criminal underworld and make a killing in this hard boiled action comedy arcade shooter.",
-			"price": 7.99,
-			"publisher": "Coffee Stain Publishing",
-			"rating": 4.6,
-			"platform": "Windows 10, Mac OS",
-			"sold": 1500,
-			"category": "Action",
-			"features": "Co-op"
-		},
-		{
-			"id": 22,
-			"name": "World War Z - GOTY Edition",
-			"banner": "http://localhost:3001/banners/world_war_z.jpg",
-			"cover": "http://localhost:3001/products/world_war_z.jpg",
-			"des": "Humanity is on the brink of extinction. From New York to Moscow, through Jerusalem, Tokyo and Marseille, the undead apocalypse continues to spread. As the end looms, a hardened few band together to defeat the horde and outlive the dead.",
-			"price": 17.99,
-			"publisher": "Mad Dog Games",
-			"rating": 4.3,
-			"platform": "Windows 10",
-			"sold": 700,
-			"category": "Shooter, FPS",
-			"features": "Co-op, Multiplayer "
-		},
-		{
-			"id": 23,
-			"name": "Crashlands",
-			"banner": "http://localhost:3001/banners/crashlands.jpg",
-			"cover": "http://localhost:3001/products/crashlands.jpg",
-			"des": "TIME Magazine Top 10 Games of 2016 Craft, battle, and quest your way through Crashlands, a story-driven Crafting ARPG overflowing with sass!",
-			"price": 5.99,
-			"publisher": "Butterscotch Shenanigans",
-			"rating": 4.5,
-			"platform": "Windows 10",
-			"sold": 900,
-			"category": "Action, RPG, Adventure",
-			"features": "Single Player"
-		},
-		{
-			"id": 24,
-			"name": "Just Cause 4 Reloaded",
-			"banner": "http://localhost:3001/banners/just_cause_4.jpg",
-			"cover": "http://localhost:3001/products/just_cause_4.jpg",
-			"des": "Rogue agent Rico Rodriguez journeys to Solis, a huge South American world home of conflict, oppression and extreme weather conditions. Strap into your wingsuit, equip your fully customizable grappling hook, and get ready to bring the thunder!",
-			"price": 15.99,
-			"publisher": "Square Enix",
-			"rating": 4.2,
-			"platform": "Windows 10",
-			"sold": 1200,
-			"category": "Shooter, Adventure",
-			"features": "Single player"
-		},
-		{
-			"id": 25,
-			"name": "SMITE",
-			"banner": "http://localhost:3001/banners/smite.jpg",
-			"cover": "http://localhost:3001/products/smite.jpg",
-			"des": "Join 35+ million players in SMITE, the Battleground of the Gods! Wield Thor’s hammer, turn your foes to stone as Medusa, or flex your divine power as one of 100+ other mythological icons. Become a God and play FREE today!",
-			"price": 0,
-			"publisher": "Hi-Rez Studios",
-			"rating": 4.0,
-			"platform": "Windows 10",
-			"sold": 1400,
-			"category": "Strategy, RPG",
-			"features": "Multiplayer"
-		}
-	]
+  "category": [
+    {
+      "id": 1,
+      "name": "Action"
+    },
+    {
+      "id": 2,
+      "name": "Adventure"
+    },
+    {
+      "id": 3,
+      "name": "Puzzle"
+    },
+    {
+      "id": 4,
+      "name": "Racing"
+    },
+    {
+      "id": 5,
+      "name": "RPG"
+    },
+    {
+      "id": 6,
+      "name": "Shooter"
+    },
+    {
+      "id": 7,
+      "name": "Strategy"
+    },
+    {
+      "id": 8,
+      "name": "Survival"
+    },
+    {
+      "id": 9,
+      "name": "FPS"
+    },
+    {
+      "id": 10,
+      "name": "Sport"
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "name": "Controller Support"
+    },
+    {
+      "id": 2,
+      "name": "Co-op"
+    },
+    {
+      "id": 3,
+      "name": "Single Player"
+    },
+    {
+      "id": 4,
+      "name": "Multiplayer"
+    }
+  ],
+  "platform": [
+    {
+      "id": 1,
+      "name": "Windows 10"
+    },
+    {
+      "id": 2,
+      "name": "Mac OS"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Rocket league",
+      "banner": "http://localhost:3001/banners/rocket_league.jpg",
+      "cover": "http://localhost:3001/products/rocket_league.jpg",
+      "des": "Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition.",
+      "price": 7.99,
+      "publisher": "Psyonix LLC",
+      "rating": 4.5,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 3000,
+      "category": "Racing, Action",
+      "features": "Co-op, Multiplayer, Single Player",
+      "videoId": "OmMF9EDbmQQ",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "STAR WARS™: Squadrons",
+      "banner": "http://localhost:3001/banners/starwars_squardons.jpg",
+      "cover": "http://localhost:3001/products/starwars_squardons.jpg",
+      "des": "Pre-order STAR WARS™: Squadrons to get the New Republic Recruit and Imperial Ace cosmetic items! Feel the adrenaline of first-person multiplayer space dogfights alongside your squadron, and buckle up in a thrilling STAR WARS™ campaign.",
+      "price": 39.99,
+      "publisher": "Electronic Arts",
+      "rating": 4,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 3400,
+      "category": "Action, Adventure, RPG",
+      "features": "Controller Support, Multiplayer",
+      "videoId": "nCcfJ9uEwvs",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "CastleStorm II",
+      "banner": "http://localhost:3001/banners/castlestorm_ii.jpg",
+      "cover": "http://localhost:3001/products/castlestorm_ii.jpg",
+      "des": "What is CastleStorm II, you ask? Better question: What ISN’T it?! Projectile warfare. Tower defense. Brutal combat. Whimsical characters. Epic campaigns of kingdom-conquering tactical strategy. ZOMBIE SHEEP! Gaming’s greatest super-duper genre mashup awaits.",
+      "price": 7.99,
+      "publisher": "Zen Studios",
+      "rating": 4,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 2000,
+      "category": "Strategy",
+      "features": "Co-op, Single Player",
+      "videoId": "xZpRXn6KVQg",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Crysis Remastered",
+      "banner": "http://localhost:3001/banners/crysis_remastered.jpg",
+      "cover": "http://localhost:3001/products/crysis_remastered.jpg",
+      "des": "The classic first-person shooter from Crytek is back with the action-packed gameplay, sandbox world, and thrilling epic battles you loved the first time around – now with remastered graphics optimized for a new generation of hardware.",
+      "price": 11.99,
+      "publisher": "Crytek",
+      "rating": 5,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 2500,
+      "category": "FPS, Action, Shooter",
+      "features": "Multiplayer, Single Player",
+      "videoId": "1WexlUA2neI",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Tony Hawk's™ Pro Skater™ 1 + 2",
+      "banner": "http://localhost:3001/banners/tony_hawks_pro_skater_1_2.jpg",
+      "cover": "http://localhost:3001/products/tony_hawks_pro_skater_1_2.jpg",
+      "des": "Play the fully-remastered Tony Hawk’s™ Pro Skater™ & Tony Hawk’s™ Pro Skater™ 2 games in one epic collection, rebuilt from the ground up in incredible HD.",
+      "price": 39.99,
+      "publisher": "Activision",
+      "rating": 4.5,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 2900,
+      "category": "Sport",
+      "features": "Controller Support, Single Player",
+      "videoId": "6-eYJRR5lyE",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Path of Exile",
+      "banner": "http://localhost:3001/banners/path_of_exile.jpg",
+      "cover": "http://localhost:3001/products/path_of_exile.jpg",
+      "des": "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power to exact your revenge against those who wronged you. Created by hardcore gamers, Path of Exile is an online Action RPG set in a dark fantasy world.",
+      "price": 0,
+      "publisher": "Grinding Gear Games",
+      "rating": 4.5,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 1900,
+      "category": "Action, Adventure, Strategy",
+      "features": "Co-op, Multiplayer, Single Player",
+      "videoId": "eYY1w2Foe54",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Heroes & Generals WWII",
+      "banner": "http://localhost:3001/banners/heroes_generals.jpg",
+      "cover": "http://localhost:3001/products/heroes_generals.jpg",
+      "des": "Shoot, blow sh!t up, fly or bark orders in the ultimate Free-to-Play, large scale, multiplayer, shooter experience. Thousands of players in multiple battles fighting one massive war of nations. The first to capture 15 cities takes the glory.",
+      "price": 0,
+      "publisher": "RETO MOTO",
+      "rating": 4,
+      "rateCount": 300,
+      "platform": "Windows 10, Mac OS",
+      "sold": 3000,
+      "category": "Shooter, FPS, Action",
+      "features": "Controller Support, Single Player",
+      "videoId": "J8aU08c1zHY",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Surgeon Simulator 2",
+      "banner": "http://localhost:3001/banners/surgeon_simulator_2.jpg",
+      "cover": "http://localhost:3001/products/surgeon_simulator_2.jpg",
+      "des": "It’s a good day to save lives, but you can’t save them all alone. Now with the help of other ‘skilled’ surgeons, break the boring order of mundane medicine and embrace the chaos only a bunch of inept people can create together. Malpractice makes perfect!",
+      "price": 9.99,
+      "publisher": "Bossa Studios",
+      "rating": 3.5,
+      "rateCount": 300,
+      "platform": "Windows 10, Mac OS",
+      "sold": 1200,
+      "category": "Puzzle",
+      "features": "Single Player",
+      "videoId": "V6COQHqc4LE",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Among Trees",
+      "banner": "http://localhost:3001/banners/among_trees.jpg",
+      "cover": "http://localhost:3001/products/among_trees.jpg",
+      "des": "A small vibrant survival sandbox, Among Trees is set in a colorful wilderness world teeming with life. Explore a colorful, breathing world that is filled to the brim with life. From dense forests to dark caves.",
+      "price": 7.99,
+      "publisher": "FJRD Interactive",
+      "rating": 5,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 2300,
+      "category": "Survival, Adventure",
+      "features": "Multiplayer, Co-op",
+      "videoId": "XhvjHhzxnkI",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Ghostrunner",
+      "banner": "http://localhost:3001/banners/ghostrunner.jpg",
+      "cover": "http://localhost:3001/products/ghostrunner.jpg",
+      "des": "Ghostrunner offers a unique single-player experience: fast-paced, violent combat, and an original setting that blends science fiction with post-apocalyptic themes. It tells the story of a world that has already ended and its inhabitants who fight to survive.",
+      "price": 23.99,
+      "publisher": "One More Level and 3D Realms",
+      "rating": 4.6,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 1500,
+      "category": "FPS, Action, Adventure",
+      "features": "Co-op, Controller Support",
+      "videoId": "U6Crs2x6Dx0",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Football Manager 2020",
+      "banner": "http://localhost:3001/banners/football_manager_2020.jpg",
+      "cover": "http://localhost:3001/products/football_manager_2020.jpg",
+      "des": "Every decision counts in Football Manager 2020 with new features and polished game mechanics rewarding planning and progression like never before, empowering managers to develop and refine both your club’s and your own unique identity.",
+      "price": 32.99,
+      "publisher": "SEGA",
+      "rating": 4,
+      "rateCount": 300,
+      "platform": "Windows 10, Mac OS",
+      "sold": 2000,
+      "category": "Strategy, Sport",
+      "features": "Multiplayer",
+      "videoId": "gE5eNnJ9ZN0",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Spellbreak",
+      "banner": "http://localhost:3001/banners/spellbreak.jpg",
+      "cover": "http://localhost:3001/products/spellbreak.jpg",
+      "des": "Spellbreak is a multiplayer action-spellcasting game where you unleash your inner battlemage. Master elemental magic to fit your playstyle and cast powerful spell combinations to dominate other players across the Hollow Lands.",
+      "price": 0,
+      "publisher": "Proletariat",
+      "rating": 4.4,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 3000,
+      "category": "Action, Survival",
+      "features": "Co-op, Multiplayer",
+      "videoId": "6Qx7Y1cSUoM",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Outriders",
+      "banner": "http://localhost:3001/banners/outriders.jpg",
+      "cover": "http://localhost:3001/products/outriders.jpg",
+      "des": "Pre-order OUTRIDERS now to receive the Hell's Rangers Content Pack, which includes: • The Hell’s Rangers Male and Female Gear Sets. • The Hell’s Rangers Arsenal of 11 unique Guns. • The Hell’s Rangers Truck Mods and Decals.",
+      "price": 59.99,
+      "publisher": "Square Enix",
+      "rating": 4,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 1500,
+      "category": "Shooter, Adventure",
+      "features": "Single Player",
+      "videoId": "dqB46adBC-o",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Relicta",
+      "banner": "http://localhost:3001/banners/relicta.jpg",
+      "cover": "http://localhost:3001/products/relicta.jpg",
+      "des": "Relicta is a first-person physics-based puzzle game where you need to creatively combine magnetism and gravity to unravel the secrets of Chandra Base.",
+      "price": 8.99,
+      "publisher": "Ravenscourt",
+      "rating": 3.6,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 500,
+      "category": "Puzzle",
+      "features": "Single Player",
+      "videoId": "3WSDNB6uRpw",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Far Cry 6",
+      "banner": "http://localhost:3001/banners/far_cry_6.jpg",
+      "cover": "http://localhost:3001/products/far_cry_6.jpg",
+      "des": "Dive into the gritty world of a modern-day guerilla revolution to liberate a nation from a dictator and his son.",
+      "price": 43.99,
+      "publisher": "Ubisoft",
+      "rating": 4.8,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 700,
+      "category": "FPS",
+      "features": "Multiplayer",
+      "videoId": "-IJuKT1mHO8",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Windbound",
+      "banner": "http://localhost:3001/banners/windbound.jpg",
+      "cover": "http://localhost:3001/products/windbound.jpg",
+      "des": "The Forbidden Islands are Calling, Unlock their Secrets Shipwrecked on an island, explore, adapt and navigate the land and perilous seas to stay alive.",
+      "price": 9.99,
+      "publisher": "Deep Silver",
+      "rating": 3.9,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 500,
+      "category": "RPG, Survival",
+      "features": "Co-op",
+      "videoId": "Gfcxpb5kTR8",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Neon Abyss",
+      "banner": "http://localhost:3001/banners/neon_abyss.jpg",
+      "cover": "http://localhost:3001/products/neon_abyss.jpg",
+      "des": "Neon Abyss is a frantic, roguelike where you run ‘n’ gun your way into the Abyss as part of the ‘Grim Squad’. Featuring unlimited item synergies and a unique dungeon evolution system, each run diversifies the experience and every choice alters the ruleset.",
+      "price": 7.99,
+      "publisher": "Team17 Digital Ltd.",
+      "rating": 4.1,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 1100,
+      "category": "Shooter",
+      "features": "Co-op",
+      "videoId": "LEmJ7Z5jEWA",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Tacoma",
+      "banner": "http://localhost:3001/banners/tacoma.jpg",
+      "cover": "http://localhost:3001/products/tacoma.jpg",
+      "des": "An Abandoned Space Station. A Mysterious AI. And You. The crew of Lunar Transfer Station Tacoma were going about their workaday lives when disaster threw them into chaos. Discover what fate awaits them in Fullbright's bold and innovative followup to Gone Home.",
+      "price": 7.99,
+      "publisher": "Fullbright",
+      "rating": 4.2,
+      "rateCount": 300,
+      "platform": "Windows 10, Mac OS",
+      "sold": 200,
+      "category": "Adventure",
+      "features": "Controller Support",
+      "videoId": "7QrjsQaKG3c",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Ooblets",
+      "banner": "http://localhost:3001/banners/ooblets.jpg",
+      "cover": "http://localhost:3001/products/ooblets.jpg",
+      "des": "Ooblets is a farming, creature collection, and town life game where you build up your farm, befriend townsfolk, grow ooblets, and have dance-offs.",
+      "price": 9.99,
+      "publisher": "Glumberland",
+      "rating": 3.5,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 600,
+      "category": "Adventure",
+      "features": "Co-op, Multiplayer",
+      "videoId": "OB6qo8wls0k",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "DEATH STRANDING",
+      "banner": "http://localhost:3001/banners/death_stranding.jpg",
+      "cover": "http://localhost:3001/products/death_stranding.jpg",
+      "des": "From legendary game creator Hideo Kojima comes an all-new, genre-defying experience. Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the disconnected remnants of our future in his hands, he embarks on a journey to reconnect the shattered world",
+      "price": 41.99,
+      "publisher": "505 Games",
+      "rating": 4.9,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 1000,
+      "category": "Adventure",
+      "features": "Co-op, Single Player",
+      "videoId": "Hen8tPH0A2w",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Huntdown",
+      "banner": "http://localhost:3001/banners/huntdown.jpg",
+      "cover": "http://localhost:3001/products/huntdown.jpg",
+      "des": "In the mayhem-filled streets of the future where gangs rule and cops fear to tread, only the bounty hunters can free the city from corruption. Lay waste to the criminal underworld and make a killing in this hard boiled action comedy arcade shooter.",
+      "price": 7.99,
+      "publisher": "Coffee Stain Publishing",
+      "rating": 4.6,
+      "rateCount": 300,
+      "platform": "Windows 10, Mac OS",
+      "sold": 1500,
+      "category": "Action",
+      "features": "Co-op",
+      "videoId": "IVssx1JOzMY",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "World War Z - GOTY Edition",
+      "banner": "http://localhost:3001/banners/world_war_z.jpg",
+      "cover": "http://localhost:3001/products/world_war_z.jpg",
+      "des": "Humanity is on the brink of extinction. From New York to Moscow, through Jerusalem, Tokyo and Marseille, the undead apocalypse continues to spread. As the end looms, a hardened few band together to defeat the horde and outlive the dead.",
+      "price": 17.99,
+      "publisher": "Mad Dog Games",
+      "rating": 4.3,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 700,
+      "category": "Shooter, FPS",
+      "features": "Co-op, Multiplayer",
+      "videoId": "YReExCHCmj0",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Crashlands",
+      "banner": "http://localhost:3001/banners/crashlands.jpg",
+      "cover": "http://localhost:3001/products/crashlands.jpg",
+      "des": "TIME Magazine Top 10 Games of 2016 Craft, battle, and quest your way through Crashlands, a story-driven Crafting ARPG overflowing with sass!",
+      "price": 5.99,
+      "publisher": "Butterscotch Shenanigans",
+      "rating": 4.5,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 900,
+      "category": "Action, RPG, Adventure",
+      "features": "Single Player",
+      "videoId": "q5M6qTEtsSQ",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Just Cause 4 Reloaded",
+      "banner": "http://localhost:3001/banners/just_cause_4.jpg",
+      "cover": "http://localhost:3001/products/just_cause_4.jpg",
+      "des": "Rogue agent Rico Rodriguez journeys to Solis, a huge South American world home of conflict, oppression and extreme weather conditions. Strap into your wingsuit, equip your fully customizable grappling hook, and get ready to bring the thunder!",
+      "price": 15.99,
+      "publisher": "Square Enix",
+      "rating": 4.2,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 1200,
+      "category": "Shooter, Adventure",
+      "features": "Single player",
+      "videoId": "Lfek7Kcq16g",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "SMITE",
+      "banner": "http://localhost:3001/banners/smite.jpg",
+      "cover": "http://localhost:3001/products/smite.jpg",
+      "des": "Join 35+ million players in SMITE, the Battleground of the Gods! Wield Thor’s hammer, turn your foes to stone as Medusa, or flex your divine power as one of 100+ other mythological icons. Become a God and play FREE today!",
+      "price": 0,
+      "publisher": "Hi-Rez Studios",
+      "rating": 4,
+      "rateCount": 300,
+      "platform": "Windows 10",
+      "sold": 1400,
+      "category": "Strategy, RPG",
+      "features": "Multiplayer",
+      "videoId": "uuOQZqSsxno",
+      "spec": [
+        {
+          "id": 1,
+          "processor": "AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6",
+          "memory": 8,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)"
+        },
+        {
+          "id": 2,
+          "processor": "AMD or Intel, Intel Core i5 7400s @ 3.5 GHz or AMD Ryzen 5 @ 3.4 GHz",
+          "memory": 16,
+          "storage": 10,
+          "graphics": "nVidia GeForce GTX 1060 or AMD Radeon RX 580 or better (4096MB VRAM or more, with Shader Model 5.0)"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "email": "thunderking9x@gmail.com",
+      "password": "$2a$10$vQr.awhp1EArHdxksMKo5euyTwC9OVM/LautykTvC12W.Dlu2s7lK",
+      "firstname": "Nguyễn Tuấn",
+      "lastname": "Linh",
+      "phone": "0355469233",
+      "avatar": "http://localhost:3001/avatar/default.png",
+      "cart": [],
+      "id": 1
+    },
+    {
+      "email": "thunderking8x@gmail.com",
+      "password": "$2a$10$zycnAQazjSBUlDl0PTBr2.FNilNquglvS0lksyQ3n3Ue4VzdgaqQS",
+      "firstname": "Nguyễn Tuấn",
+      "lastname": "Linh",
+      "phone": "0355469233",
+      "avatar": "http://localhost:3001/avatar/default.png",
+      "cart": [],
+      "id": 2
+    },
+    {
+      "email": "thunderking10x@gmail.com",
+      "password": "$2a$10$bEfu1BCO9gdjC18/knjIrOH5u1EHwen485keMDE3ipaDGxvV5QRK6",
+      "firstname": "Nguyễn Tuấn",
+      "lastname": "Linh",
+      "phone": "0355469233",
+      "avatar": "http://localhost:3001/avatar/default.png",
+      "cart": [],
+      "id": 3
+    }
+  ]
 }

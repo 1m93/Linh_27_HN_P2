@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../sass/components/productItem.sass";
-import StarIcon from "@material-ui/icons/Star";
+import StarRateIcon from "@material-ui/icons/StarRate";
 
 function ProductItem(props) {
 	const [product] = useState(props.product);
 
 	return (
-		<Link to="/" className="product">
+		<Link to={`/products/${product.id}`} className="product">
 			<div className="product__head">
 				<div
 					className="product__head-image"
@@ -25,8 +25,8 @@ function ProductItem(props) {
 					{product.price === 0 ? "Free" : "$" + product.price}
 				</div>
 				<div className="product__foot-rating">
-					<StarIcon />
-					{product.rating}
+					<StarRateIcon />
+					{product.rating.toFixed(1)}
 				</div>
 			</div>
 		</Link>

@@ -44,7 +44,7 @@ function Slider() {
 	} else {
 		return (
 			<div className="slider">
-				<Link to="/" className="slide">
+				<Link to={`/products/${newProducts[slide].id}`} className="slide">
 					<div
 						className="slide__image"
 						style={{
@@ -55,10 +55,16 @@ function Slider() {
 						<div>
 							<div className="slide__content-control">
 								<div className="slide__content-control-left">
-									<span onClick={() => prevSlide()}>
+									<span onClick={(event) => {
+										event.preventDefault();
+										prevSlide();
+									}}>
 										<ArrowBackIosOutlinedIcon />
 									</span>
-									<span onClick={() => nextSlide()}>
+									<span onClick={(event) => {
+										event.preventDefault();
+										nextSlide();
+									}}>
 										<ArrowForwardIosOutlinedIcon />
 									</span>
 								</div>
@@ -67,7 +73,10 @@ function Slider() {
 										<span
 											key={key}
 											className={key === slide ? "active" : ""}
-											onClick={() => chooseSlide(key)}
+											onClick={(event) => {
+												event.preventDefault();
+												chooseSlide(key);
+											}}
 										>
 											<FiberManualRecordIcon />
 										</span>

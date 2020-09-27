@@ -45,19 +45,60 @@ header
             &-download a
                 background-color: $PrimaryColor
                 color: white
+            &-profile
+                font-size: 75%
+                position: relative
+                padding: 0 0 0 $mdSpace!important
+                cursor: pointer
+                a 
+                    font-size: 100%
+                &-button 
+                    display: flex 
+                    align-items: center
+                    img 
+                        border-radius: 50%
+                        width: 30px 
+                        height: 30px
+                        object-fit: cover
+                &-list 
+                    display: none
+                    position: absolute
+                    z-index: 100
+                    background-color: $GrayColor
+                    left: 0
+                    width: 100%
+                    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 35px 0px
+                    a 
+                        padding: $mdSpace 0
+                        text-align: center
+                        display: block
+                        transition: 0.5s
+                        span 
+                            color: $PrimaryColor
+                        &:hover 
+                            color: white
+                &:hover 
+                    .navbar__right-profile-list 
+                        display: block
             
     .menu 
         +flexDisplay(space-between)
         align-items: center
         padding: 25px 0
         &__left
-            .active, a:hover 
+            .active, a:hover, a:hover svg>* 
                 color: white
-            a 
+            a, svg>*
                 cursor: pointer
                 color: $TextColor
                 transition: 0.5s
                 margin-right: $mdSpace
+            &-title
+                a:first-child
+                    padding-right: $mdSpace 
+                    border-right: 1px solid $TextColor
+                svg 
+                    font-size: 0.8em
         &__right
             position: relative
             form

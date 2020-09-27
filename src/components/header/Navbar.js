@@ -2,8 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import MyLink from "../MyLink";
 import PersonAddIcon from "@material-ui/icons/PersonAdd";
+import { useDispatch, useSelector } from "react-redux";
+import { logOut } from "../../action/auth";
 
 function Navbar() {
+	const userinfo = useSelector((state) => state.auth.userinfo);
+	const dispatch = useDispatch();
+
+	const handleSignOut = () => {
+		dispatch(logOut());
+	};
+
 	return (
 		<nav className="navbar">
 			<div className="navbar__left">
@@ -24,12 +33,30 @@ function Navbar() {
 				</div>
 			</div>
 			<div className="navbar__right">
-				<div className="navbar__right-signin">
-					<Link to="/login">
-						<PersonAddIcon />
-						<p>Sign in</p>
-					</Link>
-				</div>
+				{userinfo ? (
+					<div to="#" className="navbar__right-profile">
+						<div className="navbar__right-profile-button">
+							<img src={userinfo.avatar} alt="avatar" />
+							<Link to="#">{`${userinfo.firstname} ${userinfo.lastname}`}</Link>
+						</div>
+						<div className="navbar__right-profile-list">
+							<Link to="/profile">Account</Link>
+							<Link to="/cart">
+								Cart <span>({userinfo.cart.length})</span>
+							</Link>
+							<Link to="#" onClick={() => handleSignOut()}>
+								Sign out
+							</Link>
+						</div>
+					</div>
+				) : (
+					<div className="navbar__right-signin">
+						<Link to="/login">
+							<PersonAddIcon />
+							<p>Sign in</p>
+						</Link>
+					</div>
+				)}
 				<div className="navbar__right-download">
 					<a href="/">Get epic games</a>
 				</div>

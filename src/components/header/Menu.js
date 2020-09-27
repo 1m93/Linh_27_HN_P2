@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import SearchIcon from "@material-ui/icons/Search";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import MyLink from "../MyLink";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchQuickSearch, setSearch } from "../../action/navbar";
 import { LinearProgress } from "@material-ui/core";
 
-function Menu() {
+function Menu(props) {
+	const title = props.title;
 	const search = useSelector((state) => state.navbar.search);
 	const quickSearchLoading = useSelector(
 		(state) => state.navbar.quickSearchLoading
@@ -19,22 +21,41 @@ function Menu() {
 	);
 	const dispatch = useDispatch();
 	const location = useLocation().pathname;
+	const history = useHistory();
 
 	useEffect(() => {
 		if (search) {
 			dispatch(fetchQuickSearch(search));
 		}
-    }, [dispatch, search]);
-    
+	}, [dispatch, search]);
+
 	return (
 		<div className="menu container">
-			<div className="menu__left">
-				<MyLink to="/">Discover</MyLink>
-				<MyLink to="/browse">Browse</MyLink>
-			</div>
+			{title ? (
+				<div className="menu__left menu__left-title">
+					<Link
+						to="#"
+						onClick={() => {
+							history.goBack();
+						}}
+					>
+						<ArrowBackIosIcon />
+						Go back
+					</Link>
+					<Link to="#" className="active">
+						{title}
+					</Link>
+				</div>
+			) : (
+				<div className="menu__left">
+					<MyLink to="/">Discover</MyLink>
+					<MyLink to="/browse">Browse</MyLink>
+				</div>
+			)}
 			<div className="menu__right">
 				<form
 					onSubmit={(e) => {
+						history.push("/browse");
 						e.preventDefault();
 					}}
 				>
@@ -59,7 +80,11 @@ function Menu() {
 						) : (
 							<div>
 								{quickSearchResult.map((value, key) => (
-									<Link key={key} to="/">
+									<Link
+										key={key}
+										to={`/products/${value.id}`}
+										onClick={() => dispatch(setSearch(""))}
+									>
 										{value.name}
 									</Link>
 								))}
