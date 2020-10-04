@@ -1,6 +1,6 @@
 import { getUserInfo } from "./auth";
 
-export const changeCart = (id, cart) => {
+export const changeCart = (id, cart, noti, func) => {
 	return (dispatch) => {
 		dispatch(changeCartBegin());
 		let url = `http://localhost:3001/users/${id}`;
@@ -10,15 +10,18 @@ export const changeCart = (id, cart) => {
 			headers: {
 				"Content-Type": "application/json",
 			},
-			body: JSON.stringify({cart: cart}),
+			body: JSON.stringify({ cart: cart }),
 		})
 			.then((res) => res.json())
 			.then((result) => {
 				dispatch(changeCartSuccess(result));
 				dispatch(getUserInfo(result));
+				if (noti) alert(noti);
+				if (func) func()
 			})
 			.catch((error) => {
-				dispatch(changeCartFailure(error));
+				dispatch(changeCartFailure(error.toString()));
+				alert(error.toString());
 			});
 	};
 };
@@ -29,19 +32,19 @@ export const fetchCart = (ids) => {
 		let url = `http://localhost:3001/products?`;
 
 		for (let i = 0; i < ids.length; i++) {
-			url += `&id=${ids[i]}`
+			url += `&id=${ids[i]}`;
 		}
 
 		fetch(url)
 			.then((res) => res.json())
 			.then((result) => {
-				dispatch(fetchCartSuccess(result))
+				dispatch(fetchCartSuccess(result));
 			})
 			.catch((error) => {
-				dispatch(fetchCartFailure(error.toString()))
-			})
-	}
-}
+				dispatch(fetchCartFailure(error.toString()));
+			});
+	};
+};
 
 export const fetchCartBegin = () => {
 	return {

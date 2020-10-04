@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory, useParams } from "react-router-dom";
 import {
-	addViewedProduct,
 	fetchProductDetail,
 	rateProduct,
 } from "../action/productDetail";
@@ -31,17 +30,12 @@ function ProductDetail() {
 	const productDetail = useSelector((state) => state.productDetail.product);
 	const userinfo = useSelector((state) => state.auth.userinfo);
 	const changeLoading = useSelector((state) => state.cart.changeLoading);
-	const changeError = useSelector((state) => state.cart.changeError);
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(fetchProductDetail(productId));
-	}, [dispatch, productId]);
-
-	useEffect(() => {
-		addToViewedProducts();
+		dispatch(fetchProductDetail(productId, userinfo));
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [productId]);
+	}, [dispatch, productId]);
 
 	const otherInfo = (title, value) => {
 		return (
@@ -66,10 +60,7 @@ function ProductDetail() {
 					myCart = myCart.concat(productId);
 					noti = `Added ${productDetail.name} to your cart`;
 				}
-				dispatch(changeCart(userinfo.id, myCart, productDetail.name));
-				if (!changeLoading) {
-					alert(changeError || noti);
-				}
+				dispatch(changeCart(userinfo.id, myCart, noti));
 			}
 		} else {
 			window.location.href = "/login";
@@ -83,10 +74,10 @@ function ProductDetail() {
 				if (!myCart.includes(productId)) {
 					myCart = myCart.concat(productId);
 				}
-				dispatch(changeCart(userinfo.id, myCart, productDetail.name));
-				if (!changeLoading) {
-					history.push("/cart", {id: productId, price: productDetail.price})
+				const buyFunc = () => {
+					history.push("/cart", { id: productId, price: productDetail.price });
 				}
+				dispatch(changeCart(userinfo.id, myCart, "", buyFunc));
 			}
 		} else {
 			history.push("/login");
@@ -101,19 +92,6 @@ function ProductDetail() {
 			if (ques) {
 				history.push("/login");
 			}
-		}
-	};
-
-	const addToViewedProducts = () => {
-		if (userinfo) {
-			let products = [...userinfo.viewedProducts];
-			if (products.includes(productId)) {
-				products = products.filter((value) => {
-					return value !== productId;
-				});
-			}
-			products.unshift(productId);
-			dispatch(addViewedProduct(products, userinfo));
 		}
 	};
 

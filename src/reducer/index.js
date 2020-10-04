@@ -6,6 +6,7 @@ import productDetailReducer from "./productDetail";
 import sidebarReducer from "./sidebar";
 import authReducer from "./auth";
 import cartRedudcer from "./cart";
+import orderReducer from "./order";
 
 const rootReducer = combineReducers({
 	discoverProducts: discoverProductsReducer,
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
 	productDetail: productDetailReducer,
 	auth: authReducer,
 	cart: cartRedudcer,
+	order: orderReducer,
 });
 
 export default rootReducer;

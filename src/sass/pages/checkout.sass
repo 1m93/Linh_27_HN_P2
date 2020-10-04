@@ -1,0 +1,69 @@
+.Checkout 
+    position: absolute
+    width: 100%
+    top: 0
+    bottom: 0
+    z-index: 100000
+    background-color: rgba(0,0,0,0.7)
+    +flexDisplay(center)
+    .modal
+        +flexDisplay(space-between)
+        flex-direction: column
+        padding: $lgSpace
+        +createBorder(1px, $TextColor)
+        transform: translateY(40%)
+        background: $BackgroundColor
+        width: 700px 
+        height: 400px
+        &__head 
+            padding-bottom: $mdSpace
+            margin-bottom: $xlSpace
+            +flexDisplay(space-between)
+            align-items: center
+            border-bottom: 4px solid $PrimaryColor
+            &-left 
+                text-transform: uppercase
+            &-right 
+                cursor: pointer
+        &__body 
+            &-item 
+                +createBorder(2px, $GrayColor)
+                display: flex
+                align-items: center
+                background: $GrayColor
+                padding: $xsSpace $mdSpace
+                margin: $mdSpace 0
+                cursor: pointer
+                &--active, &:hover
+                    border-color: $PrimaryColor
+                &-checkbox 
+                    padding: 0
+                &-logo 
+                    height: 80px
+                    width: 100px
+                &-title
+                    margin-left: $mdSpace
+        &__foot
+            +flexDisplay(space-between)
+            align-items: flex-end 
+            &-left
+                text-transform: uppercase
+            &-right
+                button 
+                    outline: none
+                    border: none
+                    font-size: 1em
+                    padding: $smSpace $mdSpace
+                    cursor: pointer
+                    transition: 0.5s
+                    &:hover 
+                        opacity: 0.8
+                &-cancel 
+                    background: $GrayColor
+                    margin-right: $mdSpace
+                &-checkout 
+                    background: $TextColor 
+                    color: $GrayColor
+                    &--active
+                        background: $PrimaryColor
+                        color: white

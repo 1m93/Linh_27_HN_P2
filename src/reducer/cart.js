@@ -1,8 +1,8 @@
 const initialState = {
 	cartLoading: false,
 	cartError: null,
-	cartChangeLoading: false,
-	carrChangeError: null,
+	changeLoading: false,
+	changeError: null,
 	cart: [],
 };
 

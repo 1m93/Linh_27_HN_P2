@@ -10,6 +10,7 @@ import Signup from "./pages/Signup";
 import { useDispatch, useSelector } from "react-redux";
 import { authorize } from "./action/auth";
 import Cart from "./pages/Cart";
+import Thanks from "./pages/Thanks";
 
 function App() {
 	const dispatch = useDispatch();
@@ -35,8 +36,8 @@ function App() {
 					<Route exact path="/cart">
 						{userinfo ? <Cart /> : <Login />}
 					</Route>
-					<Route exact path="/checkout">
-						{userinfo ? <h1>Checkout</h1> : <Login />}
+					<Route exact path="/thanks">
+						<Thanks />
 					</Route>
 					<Route exact path="/browse">
 						<BrowsePage />

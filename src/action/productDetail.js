@@ -1,18 +1,47 @@
 import { getUserInfo } from "./auth";
 
-export const fetchProductDetail = (id) => {
+export const fetchProductDetail = (id, userinfo) => {
 	return (dispatch) => {
 		dispatch(fetchProductDetailBegin());
-		let url = `http://localhost:3001/products/${id}`;
+		let urlForProduct = `http://localhost:3001/products/${id}`;
 
-		fetch(url)
-			.then((res) => res.json())
-			.then((result) => {
-				dispatch(fetchProductDetailSuccess(result));
-			})
-			.catch((error) => {
-				dispatch(fetchProductDetailFailure(error.toString()));
-			});
+		if (!userinfo) {
+			fetch(urlForProduct)
+				.then((res) => res.json())
+				.then((result) => {
+					dispatch(fetchProductDetailSuccess(result));
+				})
+				.catch((error) => {
+					dispatch(fetchProductDetailFailure(error.toString()));
+				});
+		} else {
+			let urlAddToViewedProducts = `http://localhost:3001/users/${userinfo.id}`;
+			let products = [...userinfo.viewedProducts];
+			if (products.includes(id)) {
+				products = products.filter((value) => {
+					return value !== id;
+				});
+			}
+			products.unshift(id);
+
+			Promise.all([
+				fetch(urlForProduct).then((res) => res.json()),
+				fetch(urlAddToViewedProducts, {
+					method: "PATCH",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({ viewedProducts: products }),
+				}).then((res) => res.json()),
+			])
+				.then((allResult) => {
+					dispatch(fetchProductDetailSuccess(allResult[0]));
+					dispatch(getUserInfo({ ...userinfo, viewedProducts: products }));
+				})
+				.catch((error) => {
+					dispatch(fetchProductDetailFailure(error.toString()));
+				});
+		}
 	};
 };
 
@@ -85,26 +114,6 @@ export const rateProduct = (productId, userinfo, productDetail, rate) => {
 			})
 			.catch((error) => {
 				alert(error.toString() + ", please try again later");
-			});
-	};
-};
-
-export const addViewedProduct = (products, userinfo) => {
-	return (dispatch) => {
-		const url = `http://localhost:3001/users/${userinfo.id}`;
-
-		fetch(url, {
-			method: "PATCH",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({ viewedProducts: products }),
-		})
-			.then(() => {
-				dispatch(getUserInfo({ ...userinfo, viewedProducts: products }));
-			})
-			.catch((error) => {
-				console.log(error.toString());
 			});
 	};
 };

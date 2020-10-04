@@ -10,6 +10,7 @@ import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
 import DeleteIcon from "@material-ui/icons/Delete";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
+import Checkout from "./Checkout";
 
 function Cart() {
 	const location = useLocation();
@@ -24,6 +25,7 @@ function Cart() {
 	const [allTotal, setAllTotal] = useState(
 		location.state ? location.state.price : 0
 	);
+	const [showCheckout, setShowCheckout] = useState(false);
 	const dispatch = useDispatch();
 
 	useEffect(() => {
@@ -61,8 +63,8 @@ function Cart() {
 			return key !== value.id.toString();
 		});
 		setChecked(newCart);
-		setTotal(total - value.price)
-		setAllTotal(allTotal - value.price)
+		setTotal(total - value.price);
+		setAllTotal(allTotal - value.price);
 		dispatch(changeCart(userinfo.id, newCart));
 	};
 
@@ -77,6 +79,10 @@ function Cart() {
 		}
 	};
 
+	const handleCloseModalClick = () => {
+		setShowCheckout(true ? false : true);
+	};
+
 	if (error) {
 		return <div class="error">{error}</div>;
 	} else if (loading) {
@@ -84,6 +90,17 @@ function Cart() {
 	} else {
 		return (
 			<div className="Cart">
+				{showCheckout ? (
+					<Checkout
+						close={handleCloseModalClick}
+						total={total}
+						products={checked}
+						userId={userinfo.id}
+						cart={userinfo.cart}
+					/>
+				) : (
+					""
+				)}
 				<Header title="My Cart" />
 				{cart.length > 0 ? (
 					<main className="container">
@@ -188,7 +205,7 @@ function Cart() {
 									</div>
 									<div className="info__content-order-price">
 										<p>Total</p>
-										<p>${total.toFixed(2)}</p>
+										<p>${Math.abs(total.toFixed(2))}</p>
 									</div>
 								</div>
 							</div>
@@ -199,7 +216,16 @@ function Cart() {
 										: "info__btn"
 								}
 							>
-								<Link to="#">Checkout</Link>
+								<Link
+									to="#"
+									onClick={() => {
+										if (checked.length > 0) {
+											setShowCheckout(true);
+										}
+									}}
+								>
+									Checkout
+								</Link>
 							</div>
 						</div>
 					</main>
