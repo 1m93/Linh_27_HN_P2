@@ -12,6 +12,7 @@ import { authorize } from "./action/auth";
 import Cart from "./pages/Cart";
 import Thanks from "./pages/Thanks";
 import Order from "./pages/Order";
+import Profile from "./pages/Profile";
 
 function App() {
 	const dispatch = useDispatch();
@@ -32,7 +33,7 @@ function App() {
 						{userinfo ? <HomePage /> : <Signup />}
 					</Route>
 					<Route exact path="/profile">
-						{userinfo ? <h1>Profile</h1> : <Login />}
+						{userinfo ? <Profile /> : <Login />}
 					</Route>
 					<Route exact path="/cart">
 						{userinfo ? <Cart /> : <Login />}

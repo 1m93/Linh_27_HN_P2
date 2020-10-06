@@ -874,12 +874,17 @@
   "users": [
     {
       "email": "thunderking9x@gmail.com",
-      "password": "$2a$10$RaPMWR8TvLJr6AiepphRnOnE1Z3S5z2Fbv7y.TerJtsDUq0VJj.B6",
+      "password": "$2a$10$3QE7Fz2NsydHJRqfxY1ee.FLok/QwMX/L/ETFRZVE2q.844hFl/1i",
       "firstname": "Nguyễn Tuấn",
-      "lastname": "Linh",
+      "lastname": "Nam",
       "phone": "0355469233",
-      "avatar": "http://localhost:3001/avatar/default.png",
-      "cart": [],
+      "avatar": "http://localhost:3001/avatar/IMG_20191209_235721.jpg",
+      "country": "Việt Nam",
+      "city": "Hà Nội",
+      "address": "Hồ Tùng Mậu, Mai Dịch, Cầu Giấy",
+      "cart": [
+        "22"
+      ],
       "ratedProducts": {
         "5": 4,
         "10": 4,
@@ -891,13 +896,14 @@
         "25": 3
       },
       "viewedProducts": [
-        "23",
         "25",
-        "21",
-        "12",
         "22",
-        "9",
+        "7",
+        "12",
         "24",
+        "21",
+        "23",
+        "9",
         "1",
         "20",
         "2",
@@ -907,7 +913,6 @@
         "6",
         "11",
         "10",
-        "7",
         "15",
         "5",
         "4",
@@ -923,12 +928,17 @@
       "lastname": "Linh",
       "phone": "0355469233",
       "avatar": "http://localhost:3001/avatar/default.png",
+      "country": "",
+      "city": "",
+      "address": "",
       "cart": [],
       "ratedProducts": {},
       "viewedProducts": [
         "22",
-        "15",
+        "25",
+        "7",
         "24",
+        "15",
         "23"
       ],
       "id": 2

@@ -30,17 +30,18 @@ function Order() {
 				) : orders.length > 0 ? (
 					orders.map((item) => (
 						<OrderItem
+							key={item.id}
 							products={item.products}
 							time={item.time}
 							date={item.date}
 						/>
 					))
 				) : (
-					<div class="noorder">
+					<div className="noorder">
 						<div className="noorder__icon">
 							<SentimentVeryDissatisfiedIcon />
 						</div>
-						<p className="noorder__text">You haven't buy any games yet</p>
+						<p className="noorder__text">You haven't bought any games yet</p>
 						<div className="noorder__btn">
 							<Link to="/">Go shopping now!</Link>
 						</div>
