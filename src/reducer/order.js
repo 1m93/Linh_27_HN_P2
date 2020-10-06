@@ -1,7 +1,9 @@
 const initialState = {
 	checkoutLoading: false,
 	checkoutError: null,
-	order: "",
+	orders: "",
+	loading: false,
+	error: null,
 };
 
 const orderReducer = (state = initialState, action) => {
@@ -24,6 +26,28 @@ const orderReducer = (state = initialState, action) => {
 				...state,
 				checkoutLoading: false,
 				checkoutError: action.payload,
+			};
+		}
+		case "FETCH_ORDERS_BEGIN": {
+			return {
+				...state,
+				loading: true,
+				error: null,
+			};
+		}
+		case "FETCH_ORDERS_SUCCESS": {
+			return {
+				...state,
+				loading: false,
+				orders: action.payload,
+			};
+		}
+		case "FETCH_ORDERS_FAILURE": {
+			return {
+				...state,
+				loading: false,
+				orders: "",
+				error: action.payload,
 			};
 		}
 		default: {

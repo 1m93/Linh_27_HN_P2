@@ -74,7 +74,9 @@ function Checkout(props) {
 					</div>
 				</div>
 				<div className="modal__foot">
-					<div className="modal__foot-left">Total: ${props.total}</div>
+					<div className="modal__foot-left">
+						Total: ${Math.abs(props.total.toFixed(2))}
+					</div>
 					<div className="modal__foot-right">
 						<button
 							className="modal__foot-right-cancel"

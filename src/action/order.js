@@ -16,6 +16,8 @@ export const checkout = (products, paid, method, userId, cart) => {
 					products: products,
 					paid: paid,
 					method: method,
+					date: new Date().toLocaleDateString(),
+					time: new Date().toLocaleTimeString(),
 					userId: userId,
 				}),
 			}),
@@ -38,6 +40,21 @@ export const checkout = (products, paid, method, userId, cart) => {
 	};
 };
 
+export const fetchOrders = (userId) => {
+	return (dispatch) => {
+		dispatch(fetchOrdersBegin());
+
+		fetch(`http://localhost:3001/orders?userId=${userId}&_sort=id&_order=desc`)
+			.then((res) => res.json())
+			.then((result) => {
+				dispatch(fetchOrdersSuccess(result));
+			})
+			.catch((error) => {
+				dispatch(fetchOrdersFailure(error.toString()));
+			});
+	};
+};
+
 export const checkoutBegin = () => {
 	return {
 		type: "CHECKOUT_BEGIN",
@@ -53,6 +70,26 @@ export const checkoutSuccess = () => {
 export const checkoutFailure = (value) => {
 	return {
 		type: "CHECKOUT_FAILURE",
+		payload: value,
+	};
+};
+
+export const fetchOrdersBegin = () => {
+	return {
+		type: "FETCH_ORDERS_BEGIN",
+	};
+};
+
+export const fetchOrdersSuccess = (value) => {
+	return {
+		type: "FETCH_ORDERS_SUCCESS",
+		payload: value,
+	};
+};
+
+export const fetchOrdersFailure = (value) => {
+	return {
+		type: "FETCH_ORDERS_FAILURE",
 		payload: value,
 	};
 };

@@ -44,6 +44,9 @@ function Navbar() {
 							<Link to="/cart">
 								Cart <span>({userinfo.cart.length})</span>
 							</Link>
+							<Link to="/order">
+								Order
+							</Link>
 							<Link to="#" onClick={() => handleSignOut()}>
 								Sign out
 							</Link>

@@ -750,7 +750,7 @@
       "des": "Humanity is on the brink of extinction. From New York to Moscow, through Jerusalem, Tokyo and Marseille, the undead apocalypse continues to spread. As the end looms, a hardened few band together to defeat the horde and outlive the dead.",
       "price": 17.99,
       "publisher": "Mad Dog Games",
-      "rating": 4.295681063122925,
+      "rating": 4.2990033222591375,
       "rateCount": 301,
       "platform": "Windows 10",
       "sold": 700,
@@ -879,34 +879,32 @@
       "lastname": "Linh",
       "phone": "0355469233",
       "avatar": "http://localhost:3001/avatar/default.png",
-      "cart": [
-        "22",
-        "24",
-        "2"
-      ],
+      "cart": [],
       "ratedProducts": {
         "5": 4,
         "10": 4,
         "12": 4,
         "21": 4,
-        "22": 3,
+        "22": 4,
         "23": 4,
         "24": 4,
         "25": 3
       },
       "viewedProducts": [
         "23",
-        "2",
+        "25",
+        "21",
+        "12",
+        "22",
+        "9",
         "24",
         "1",
-        "21",
-        "22",
-        "19",
         "20",
+        "2",
+        "19",
         "13",
         "17",
         "6",
-        "25",
         "11",
         "10",
         "7",
@@ -914,9 +912,7 @@
         "5",
         "4",
         "16",
-        "12",
-        "3",
-        "9"
+        "3"
       ],
       "id": 1
     },
@@ -930,6 +926,7 @@
       "cart": [],
       "ratedProducts": {},
       "viewedProducts": [
+        "22",
         "15",
         "24",
         "23"
@@ -940,11 +937,13 @@
   "orders": [
     {
       "products": [
-        "21",
-        "17"
+        "24",
+        "20"
       ],
-      "paid": 15.98,
-      "method": "paypal",
+      "paid": 57.980000000000004,
+      "method": "credit",
+      "date": "5/10/2020",
+      "time": "17:57:36",
       "userId": 1,
       "id": 1
     },
@@ -953,26 +952,33 @@
         "21"
       ],
       "paid": 7.99,
-      "method": "credit",
+      "method": "paypal",
+      "date": "6/10/2020",
+      "time": "18:00:03",
       "userId": 1,
       "id": 2
     },
     {
       "products": [
-        "1"
+        "25",
+        "23"
       ],
-      "paid": 7.99,
+      "paid": 5.99,
       "method": "credit",
+      "date": "6/10/2020",
+      "time": "18:14:02",
       "userId": 1,
       "id": 3
     },
     {
       "products": [
-        "23"
+        "22"
       ],
-      "paid": 79.96000000000001,
+      "paid": 17.99,
       "method": "credit",
-      "userId": 1,
+      "date": "6/10/2020",
+      "time": "18:26:16",
+      "userId": 2,
       "id": 4
     }
   ]

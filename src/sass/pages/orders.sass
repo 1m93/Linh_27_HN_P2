@@ -1,0 +1,60 @@
+.Order
+    main 
+        @extend .endContent
+        min-height: 100vh
+        .OrderItem
+            margin-bottom: 1em
+            .time 
+                margin-bottom: $smSpace
+                color: $TextColor
+                font-weight: 600
+                font-size: 1.2em
+            .products
+                &__item 
+                    margin-bottom: $smSpace
+                    background: $GrayColor
+                    padding: $smSpace $mdSpace
+                    +flexDisplay(space-between)
+                    align-items: center
+                    &-left
+                        flex-basis: 50%
+                        display: flex 
+                        align-items: center
+                        &-banner 
+                            margin-right: $mdSpace
+                            background-size: cover !important
+                            width: 25%
+                            padding-bottom: 13%
+                        &-name 
+                            p:nth-child(2) 
+                                margin-top: $smSpace
+                                color: $HeaderTextColor
+                    &-right
+                        svg
+                            font-size: 1.7em
+                        &-info
+                            margin-right: $mdSpace
+                            svg 
+                                color: $HeaderTextColor
+                        a:hover 
+                            transition: 0.5s
+                            svg 
+                                color: $PrimaryColor
+        .noorder
+            height: 70vh
+            width: 100%
+            +flexDisplay(center)
+            flex-direction: column
+            text-align: center
+            svg 
+                color: $PrimaryColor
+                font-size: 8em
+            p 
+                font-size: 3em
+                margin-bottom: $xsSpace
+            a 
+                font-size: 1.2em
+                color: $TextColor
+                &:hover 
+                    text-decoration: underline
+

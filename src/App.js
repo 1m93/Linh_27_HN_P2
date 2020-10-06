@@ -11,6 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { authorize } from "./action/auth";
 import Cart from "./pages/Cart";
 import Thanks from "./pages/Thanks";
+import Order from "./pages/Order";
 
 function App() {
 	const dispatch = useDispatch();
@@ -35,6 +36,9 @@ function App() {
 					</Route>
 					<Route exact path="/cart">
 						{userinfo ? <Cart /> : <Login />}
+					</Route>
+					<Route exact path="/order">
+						{userinfo ? <Order /> : <Login />}
 					</Route>
 					<Route exact path="/thanks">
 						<Thanks />
