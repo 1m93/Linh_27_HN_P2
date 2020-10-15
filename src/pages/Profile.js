@@ -67,12 +67,20 @@ function Profile() {
 				headers: {
 					"Content-Type": "application/json",
 				},
-				body: JSON.stringify(newInfo),
+				body: JSON.stringify({
+					firstname: newInfo.firstname,
+					lastname: newInfo.lastname,
+					phone: newInfo.phone,
+					email: newInfo.email,
+					country: newInfo.country,
+					city: newInfo.city,
+					address: newInfo.address,
+				}),
 			})
 				.then(() => {
-                    setSaveLoading(false);
-                    dispatch(getUserInfo(newInfo));
-                    alert("Saved your personal information")
+					setSaveLoading(false);
+					dispatch(getUserInfo(newInfo));
+					alert("Saved your personal information");
 				})
 				.catch((error) => {
 					setSaveLoading(false);
@@ -107,7 +115,8 @@ function Profile() {
 			!emailAlert &&
 			newInfo.firstname &&
 			newInfo.lastname &&
-			newInfo.phone
+			newInfo.phone &&
+			newInfo.email
 		) {
 			setSaveClickable(true);
 		} else {

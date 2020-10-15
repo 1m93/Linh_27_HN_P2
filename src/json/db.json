@@ -73,8 +73,8 @@
     {
       "id": 1,
       "name": "Rocket league",
-      "banner": "http://localhost:3001/banners/rocket_league.jpg",
-      "cover": "http://localhost:3001/products/rocket_league.jpg",
+      "banner": "http://localhost:3001/banner/rocket_league.jpg",
+      "cover": "http://localhost:3001/cover/rocket_league.jpg",
       "des": "Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition.",
       "price": 7.99,
       "publisher": "Psyonix LLC",
@@ -105,8 +105,8 @@
     {
       "id": 2,
       "name": "STAR WARS™: Squadrons",
-      "banner": "http://localhost:3001/banners/starwars_squardons.jpg",
-      "cover": "http://localhost:3001/products/starwars_squardons.jpg",
+      "banner": "http://localhost:3001/banner/starwars_squardons.jpg",
+      "cover": "http://localhost:3001/cover/starwars_squardons.jpg",
       "des": "Pre-order STAR WARS™: Squadrons to get the New Republic Recruit and Imperial Ace cosmetic items! Feel the adrenaline of first-person multiplayer space dogfights alongside your squadron, and buckle up in a thrilling STAR WARS™ campaign.",
       "price": 39.99,
       "publisher": "Electronic Arts",
@@ -137,8 +137,8 @@
     {
       "id": 3,
       "name": "CastleStorm II",
-      "banner": "http://localhost:3001/banners/castlestorm_ii.jpg",
-      "cover": "http://localhost:3001/products/castlestorm_ii.jpg",
+      "banner": "http://localhost:3001/banner/castlestorm_ii.jpg",
+      "cover": "http://localhost:3001/cover/castlestorm_ii.jpg",
       "des": "What is CastleStorm II, you ask? Better question: What ISN’T it?! Projectile warfare. Tower defense. Brutal combat. Whimsical characters. Epic campaigns of kingdom-conquering tactical strategy. ZOMBIE SHEEP! Gaming’s greatest super-duper genre mashup awaits.",
       "price": 7.99,
       "publisher": "Zen Studios",
@@ -169,8 +169,8 @@
     {
       "id": 4,
       "name": "Crysis Remastered",
-      "banner": "http://localhost:3001/banners/crysis_remastered.jpg",
-      "cover": "http://localhost:3001/products/crysis_remastered.jpg",
+      "banner": "http://localhost:3001/banner/crysis_remastered.jpg",
+      "cover": "http://localhost:3001/cover/crysis_remastered.jpg",
       "des": "The classic first-person shooter from Crytek is back with the action-packed gameplay, sandbox world, and thrilling epic battles you loved the first time around – now with remastered graphics optimized for a new generation of hardware.",
       "price": 11.99,
       "publisher": "Crytek",
@@ -201,8 +201,8 @@
     {
       "id": 5,
       "name": "Tony Hawk's™ Pro Skater™ 1 + 2",
-      "banner": "http://localhost:3001/banners/tony_hawks_pro_skater_1_2.jpg",
-      "cover": "http://localhost:3001/products/tony_hawks_pro_skater_1_2.jpg",
+      "banner": "http://localhost:3001/banner/tony_hawks_pro_skater_1_2.jpg",
+      "cover": "http://localhost:3001/cover/tony_hawks_pro_skater_1_2.jpg",
       "des": "Play the fully-remastered Tony Hawk’s™ Pro Skater™ & Tony Hawk’s™ Pro Skater™ 2 games in one epic collection, rebuilt from the ground up in incredible HD.",
       "price": 39.99,
       "publisher": "Activision",
@@ -233,8 +233,8 @@
     {
       "id": 6,
       "name": "Path of Exile",
-      "banner": "http://localhost:3001/banners/path_of_exile.jpg",
-      "cover": "http://localhost:3001/products/path_of_exile.jpg",
+      "banner": "http://localhost:3001/banner/path_of_exile.jpg",
+      "cover": "http://localhost:3001/cover/path_of_exile.jpg",
       "des": "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power to exact your revenge against those who wronged you. Created by hardcore gamers, Path of Exile is an online Action RPG set in a dark fantasy world.",
       "price": 0,
       "publisher": "Grinding Gear Games",
@@ -265,8 +265,8 @@
     {
       "id": 7,
       "name": "Heroes & Generals WWII",
-      "banner": "http://localhost:3001/banners/heroes_generals.jpg",
-      "cover": "http://localhost:3001/products/heroes_generals.jpg",
+      "banner": "http://localhost:3001/banner/heroes_generals.jpg",
+      "cover": "http://localhost:3001/cover/heroes_generals.jpg",
       "des": "Shoot, blow sh!t up, fly or bark orders in the ultimate Free-to-Play, large scale, multiplayer, shooter experience. Thousands of players in multiple battles fighting one massive war of nations. The first to capture 15 cities takes the glory.",
       "price": 0,
       "publisher": "RETO MOTO",
@@ -297,8 +297,8 @@
     {
       "id": 8,
       "name": "Surgeon Simulator 2",
-      "banner": "http://localhost:3001/banners/surgeon_simulator_2.jpg",
-      "cover": "http://localhost:3001/products/surgeon_simulator_2.jpg",
+      "banner": "http://localhost:3001/banner/surgeon_simulator_2.jpg",
+      "cover": "http://localhost:3001/cover/surgeon_simulator_2.jpg",
       "des": "It’s a good day to save lives, but you can’t save them all alone. Now with the help of other ‘skilled’ surgeons, break the boring order of mundane medicine and embrace the chaos only a bunch of inept people can create together. Malpractice makes perfect!",
       "price": 9.99,
       "publisher": "Bossa Studios",
@@ -329,8 +329,8 @@
     {
       "id": 9,
       "name": "Among Trees",
-      "banner": "http://localhost:3001/banners/among_trees.jpg",
-      "cover": "http://localhost:3001/products/among_trees.jpg",
+      "banner": "http://localhost:3001/banner/among_trees.jpg",
+      "cover": "http://localhost:3001/cover/among_trees.jpg",
       "des": "A small vibrant survival sandbox, Among Trees is set in a colorful wilderness world teeming with life. Explore a colorful, breathing world that is filled to the brim with life. From dense forests to dark caves.",
       "price": 7.99,
       "publisher": "FJRD Interactive",
@@ -361,8 +361,8 @@
     {
       "id": 10,
       "name": "Ghostrunner",
-      "banner": "http://localhost:3001/banners/ghostrunner.jpg",
-      "cover": "http://localhost:3001/products/ghostrunner.jpg",
+      "banner": "http://localhost:3001/banner/ghostrunner.jpg",
+      "cover": "http://localhost:3001/cover/ghostrunner.jpg",
       "des": "Ghostrunner offers a unique single-player experience: fast-paced, violent combat, and an original setting that blends science fiction with post-apocalyptic themes. It tells the story of a world that has already ended and its inhabitants who fight to survive.",
       "price": 23.99,
       "publisher": "One More Level and 3D Realms",
@@ -393,8 +393,8 @@
     {
       "id": 11,
       "name": "Football Manager 2020",
-      "banner": "http://localhost:3001/banners/football_manager_2020.jpg",
-      "cover": "http://localhost:3001/products/football_manager_2020.jpg",
+      "banner": "http://localhost:3001/banner/football_manager_2020.jpg",
+      "cover": "http://localhost:3001/cover/football_manager_2020.jpg",
       "des": "Every decision counts in Football Manager 2020 with new features and polished game mechanics rewarding planning and progression like never before, empowering managers to develop and refine both your club’s and your own unique identity.",
       "price": 32.99,
       "publisher": "SEGA",
@@ -425,8 +425,8 @@
     {
       "id": 12,
       "name": "Spellbreak",
-      "banner": "http://localhost:3001/banners/spellbreak.jpg",
-      "cover": "http://localhost:3001/products/spellbreak.jpg",
+      "banner": "http://localhost:3001/banner/spellbreak.jpg",
+      "cover": "http://localhost:3001/cover/spellbreak.jpg",
       "des": "Spellbreak is a multiplayer action-spellcasting game where you unleash your inner battlemage. Master elemental magic to fit your playstyle and cast powerful spell combinations to dominate other players across the Hollow Lands.",
       "price": 0,
       "publisher": "Proletariat",
@@ -457,8 +457,8 @@
     {
       "id": 13,
       "name": "Outriders",
-      "banner": "http://localhost:3001/banners/outriders.jpg",
-      "cover": "http://localhost:3001/products/outriders.jpg",
+      "banner": "http://localhost:3001/banner/outriders.jpg",
+      "cover": "http://localhost:3001/cover/outriders.jpg",
       "des": "Pre-order OUTRIDERS now to receive the Hell's Rangers Content Pack, which includes: • The Hell’s Rangers Male and Female Gear Sets. • The Hell’s Rangers Arsenal of 11 unique Guns. • The Hell’s Rangers Truck Mods and Decals.",
       "price": 59.99,
       "publisher": "Square Enix",
@@ -489,8 +489,8 @@
     {
       "id": 14,
       "name": "Relicta",
-      "banner": "http://localhost:3001/banners/relicta.jpg",
-      "cover": "http://localhost:3001/products/relicta.jpg",
+      "banner": "http://localhost:3001/banner/relicta.jpg",
+      "cover": "http://localhost:3001/cover/relicta.jpg",
       "des": "Relicta is a first-person physics-based puzzle game where you need to creatively combine magnetism and gravity to unravel the secrets of Chandra Base.",
       "price": 8.99,
       "publisher": "Ravenscourt",
@@ -521,8 +521,8 @@
     {
       "id": 15,
       "name": "Far Cry 6",
-      "banner": "http://localhost:3001/banners/far_cry_6.jpg",
-      "cover": "http://localhost:3001/products/far_cry_6.jpg",
+      "banner": "http://localhost:3001/banner/far_cry_6.jpg",
+      "cover": "http://localhost:3001/cover/far_cry_6.jpg",
       "des": "Dive into the gritty world of a modern-day guerilla revolution to liberate a nation from a dictator and his son.",
       "price": 43.99,
       "publisher": "Ubisoft",
@@ -553,8 +553,8 @@
     {
       "id": 16,
       "name": "Windbound",
-      "banner": "http://localhost:3001/banners/windbound.jpg",
-      "cover": "http://localhost:3001/products/windbound.jpg",
+      "banner": "http://localhost:3001/banner/windbound.jpg",
+      "cover": "http://localhost:3001/cover/windbound.jpg",
       "des": "The Forbidden Islands are Calling, Unlock their Secrets Shipwrecked on an island, explore, adapt and navigate the land and perilous seas to stay alive.",
       "price": 9.99,
       "publisher": "Deep Silver",
@@ -585,8 +585,8 @@
     {
       "id": 17,
       "name": "Neon Abyss",
-      "banner": "http://localhost:3001/banners/neon_abyss.jpg",
-      "cover": "http://localhost:3001/products/neon_abyss.jpg",
+      "banner": "http://localhost:3001/banner/neon_abyss.jpg",
+      "cover": "http://localhost:3001/cover/neon_abyss.jpg",
       "des": "Neon Abyss is a frantic, roguelike where you run ‘n’ gun your way into the Abyss as part of the ‘Grim Squad’. Featuring unlimited item synergies and a unique dungeon evolution system, each run diversifies the experience and every choice alters the ruleset.",
       "price": 7.99,
       "publisher": "Team17 Digital Ltd.",
@@ -617,8 +617,8 @@
     {
       "id": 18,
       "name": "Tacoma",
-      "banner": "http://localhost:3001/banners/tacoma.jpg",
-      "cover": "http://localhost:3001/products/tacoma.jpg",
+      "banner": "http://localhost:3001/banner/tacoma.jpg",
+      "cover": "http://localhost:3001/cover/tacoma.jpg",
       "des": "An Abandoned Space Station. A Mysterious AI. And You. The crew of Lunar Transfer Station Tacoma were going about their workaday lives when disaster threw them into chaos. Discover what fate awaits them in Fullbright's bold and innovative followup to Gone Home.",
       "price": 7.99,
       "publisher": "Fullbright",
@@ -649,8 +649,8 @@
     {
       "id": 19,
       "name": "Ooblets",
-      "banner": "http://localhost:3001/banners/ooblets.jpg",
-      "cover": "http://localhost:3001/products/ooblets.jpg",
+      "banner": "http://localhost:3001/banner/ooblets.jpg",
+      "cover": "http://localhost:3001/cover/ooblets.jpg",
       "des": "Ooblets is a farming, creature collection, and town life game where you build up your farm, befriend townsfolk, grow ooblets, and have dance-offs.",
       "price": 9.99,
       "publisher": "Glumberland",
@@ -681,8 +681,8 @@
     {
       "id": 20,
       "name": "DEATH STRANDING",
-      "banner": "http://localhost:3001/banners/death_stranding.jpg",
-      "cover": "http://localhost:3001/products/death_stranding.jpg",
+      "banner": "http://localhost:3001/banner/death_stranding.jpg",
+      "cover": "http://localhost:3001/cover/death_stranding.jpg",
       "des": "From legendary game creator Hideo Kojima comes an all-new, genre-defying experience. Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the disconnected remnants of our future in his hands, he embarks on a journey to reconnect the shattered world",
       "price": 41.99,
       "publisher": "505 Games",
@@ -713,8 +713,8 @@
     {
       "id": 21,
       "name": "Huntdown",
-      "banner": "http://localhost:3001/banners/huntdown.jpg",
-      "cover": "http://localhost:3001/products/huntdown.jpg",
+      "banner": "http://localhost:3001/banner/huntdown.jpg",
+      "cover": "http://localhost:3001/cover/huntdown.jpg",
       "des": "In the mayhem-filled streets of the future where gangs rule and cops fear to tread, only the bounty hunters can free the city from corruption. Lay waste to the criminal underworld and make a killing in this hard boiled action comedy arcade shooter.",
       "price": 7.99,
       "publisher": "Coffee Stain Publishing",
@@ -745,8 +745,8 @@
     {
       "id": 22,
       "name": "World War Z - GOTY Edition",
-      "banner": "http://localhost:3001/banners/world_war_z.jpg",
-      "cover": "http://localhost:3001/products/world_war_z.jpg",
+      "banner": "http://localhost:3001/banner/world_war_z.jpg",
+      "cover": "http://localhost:3001/cover/world_war_z.jpg",
       "des": "Humanity is on the brink of extinction. From New York to Moscow, through Jerusalem, Tokyo and Marseille, the undead apocalypse continues to spread. As the end looms, a hardened few band together to defeat the horde and outlive the dead.",
       "price": 17.99,
       "publisher": "Mad Dog Games",
@@ -777,13 +777,13 @@
     {
       "id": 23,
       "name": "Crashlands",
-      "banner": "http://localhost:3001/banners/crashlands.jpg",
-      "cover": "http://localhost:3001/products/crashlands.jpg",
+      "banner": "http://localhost:3001/banner/crashlands.jpg",
+      "cover": "http://localhost:3001/cover/crashlands.jpg",
       "des": "TIME Magazine Top 10 Games of 2016 Craft, battle, and quest your way through Crashlands, a story-driven Crafting ARPG overflowing with sass!",
       "price": 5.99,
       "publisher": "Butterscotch Shenanigans",
-      "rating": 4.514950166112957,
-      "rateCount": 301,
+      "rating": 4.509933774834437,
+      "rateCount": 302,
       "platform": "Windows 10",
       "sold": 900,
       "category": "Action, RPG, Adventure",
@@ -809,8 +809,8 @@
     {
       "id": 24,
       "name": "Just Cause 4 Reloaded",
-      "banner": "http://localhost:3001/banners/just_cause_4.jpg",
-      "cover": "http://localhost:3001/products/just_cause_4.jpg",
+      "banner": "http://localhost:3001/banner/just_cause_4.jpg",
+      "cover": "http://localhost:3001/cover/just_cause_4.jpg",
       "des": "Rogue agent Rico Rodriguez journeys to Solis, a huge South American world home of conflict, oppression and extreme weather conditions. Strap into your wingsuit, equip your fully customizable grappling hook, and get ready to bring the thunder!",
       "price": 15.99,
       "publisher": "Square Enix",
@@ -841,8 +841,8 @@
     {
       "id": 25,
       "name": "SMITE",
-      "banner": "http://localhost:3001/banners/smite.jpg",
-      "cover": "http://localhost:3001/products/smite.jpg",
+      "banner": "http://localhost:3001/banner/smite.jpg",
+      "cover": "http://localhost:3001/cover/smite.jpg",
       "des": "Join 35+ million players in SMITE, the Battleground of the Gods! Wield Thor’s hammer, turn your foes to stone as Medusa, or flex your divine power as one of 100+ other mythological icons. Become a God and play FREE today!",
       "price": 0,
       "publisher": "Hi-Rez Studios",
@@ -851,7 +851,7 @@
       "platform": "Windows 10",
       "sold": 1400,
       "category": "Strategy, RPG",
-      "features": "Multiplayer",
+      "features": "Multiplayer, Controller Support",
       "videoId": "uuOQZqSsxno",
       "spec": [
         {
@@ -874,74 +874,89 @@
   "users": [
     {
       "email": "thunderking9x@gmail.com",
-      "password": "$2a$10$3QE7Fz2NsydHJRqfxY1ee.FLok/QwMX/L/ETFRZVE2q.844hFl/1i",
-      "firstname": "Nguyễn Tuấn",
-      "lastname": "Nam",
-      "phone": "0355469233",
-      "avatar": "http://localhost:3001/avatar/IMG_20191209_235721.jpg",
-      "country": "Việt Nam",
-      "city": "Hà Nội",
-      "address": "Hồ Tùng Mậu, Mai Dịch, Cầu Giấy",
-      "cart": [
-        "22"
-      ],
-      "ratedProducts": {
-        "5": 4,
-        "10": 4,
-        "12": 4,
-        "21": 4,
-        "22": 4,
-        "23": 4,
-        "24": 4,
-        "25": 3
-      },
-      "viewedProducts": [
-        "25",
-        "22",
-        "7",
-        "12",
-        "24",
-        "21",
-        "23",
-        "9",
-        "1",
-        "20",
-        "2",
-        "19",
-        "13",
-        "17",
-        "6",
-        "11",
-        "10",
-        "15",
-        "5",
-        "4",
-        "16",
-        "3"
-      ],
-      "id": 1
-    },
-    {
-      "email": "thunderking8x@gmail.com",
       "password": "$2a$10$.yJE/.LBCVLxs8hHCDR2tOeEaNAHTKBFX2460JFhGLYLQiQRN7lC2",
       "firstname": "Nguyễn Tuấn",
       "lastname": "Linh",
       "phone": "0355469233",
-      "avatar": "http://localhost:3001/avatar/default.png",
+      "avatar": "http://localhost:3001/avatar/astronaut_spacesuit_reflection_144426_3840x2160.jpg",
       "country": "",
       "city": "",
       "address": "",
-      "cart": [],
+      "cart": [
+        "15"
+      ],
       "ratedProducts": {},
       "viewedProducts": [
+        "15",
         "22",
         "25",
         "7",
         "24",
-        "15",
         "23"
       ],
+      "isAdmin": true,
+      "id": 1
+    },
+    {
+      "email": "thunderking8x@gmail.com",
+      "password": "$2a$10$Rk.XylcreBpRThNi4OpPIuDftQBpW0OnlyCL7oJ1MfX9Yp4OufmoK",
+      "firstname": "Nguyễn Tuấn",
+      "lastname": "Linh",
+      "phone": "0355469233",
+      "avatar": "http://localhost:3001/avatar/astronaut_spacesuit_reflection_144426_3840x2160.jpg",
+      "country": "Việt Nam",
+      "city": "Hà Nội",
+      "address": "Hồ Tùng Mậu, Mai Dịch, Cầu Giấy",
+      "cart": [
+        "10",
+        "23"
+      ],
+      "ratedProducts": {},
+      "viewedProducts": [
+        "23",
+        "1",
+        "22",
+        "5",
+        "12",
+        "7",
+        "25",
+        "27",
+        "3",
+        "13",
+        "11",
+        "19",
+        "9",
+        "24",
+        "10",
+        "15",
+        "20",
+        "2",
+        "21"
+      ],
+      "isAdmin": true,
       "id": 2
+    },
+    {
+      "email": "17020859@vnu.edu.vn",
+      "password": "$2a$10$E8SqbxvH5iZy6kXINJp60uG0rnriSXAgmje27knDoY7R5LIADmDlS",
+      "firstname": "Nguyễn Tuấn",
+      "lastname": "Nam",
+      "phone": "0355469233",
+      "avatar": "http://localhost:3001/avatar/daft_punk_graphic_helmet_music_90757_1920x1080.jpg",
+      "country": "",
+      "city": "",
+      "address": "",
+      "cart": [],
+      "ratedProducts": {
+        "23": 3
+      },
+      "viewedProducts": [
+        "22",
+        "24",
+        "23"
+      ],
+      "isAdmin": false,
+      "id": 3
     }
   ],
   "orders": [
@@ -990,6 +1005,40 @@
       "time": "18:26:16",
       "userId": 2,
       "id": 4
+    },
+    {
+      "products": [
+        "24",
+        "20"
+      ],
+      "paid": 57.980000000000004,
+      "method": "credit",
+      "date": "7/10/2020",
+      "time": "09:24:16",
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "products": [
+        "22"
+      ],
+      "paid": 23.979999999999997,
+      "method": "credit",
+      "date": "13/10/2020",
+      "time": "10:47:55",
+      "userId": 3,
+      "id": 6
+    },
+    {
+      "products": [
+        "23"
+      ],
+      "paid": 5.99,
+      "method": "paypal",
+      "date": "13/10/2020",
+      "time": "10:50:11",
+      "userId": 3,
+      "id": 7
     }
   ]
 }

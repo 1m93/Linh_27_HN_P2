@@ -13,11 +13,11 @@ function RecentlyViewed(props) {
 
 	useEffect(() => {
 		setLoading(true);
-		let url = `http://localhost:3001/products?_limit=5`;
+		let url = `http://localhost:3001/products/?_limit=5`;
 		for (let i = 0; i < 5 && i < viewedProducts.length; i++) {
 			url += `&id=${viewedProducts[i]}`;
 		}
-		if (props.productId) url += `&id_ne=${props.productId}`
+		if (props.productId) url += `&id_ne=${props.productId}`;
 
 		fetch(url)
 			.then((res) => res.json())
@@ -27,6 +27,8 @@ function RecentlyViewed(props) {
 				setError(null);
 			})
 			.catch((error) => {
+				setLoading(false);
+				setProducts("");
 				setError(error.toString() + " recently viewed");
 			});
 	}, [viewedProducts, props.productId]);
@@ -38,7 +40,11 @@ function RecentlyViewed(props) {
 	} else {
 		return (
 			<div className="RecentlyViewed">
-				{products.length > 0 ? <ProductList products={products} /> : "No recently Viewed Products"}
+				{products.length > 0 ? (
+					<ProductList products={products} />
+				) : (
+					"No recently Viewed Products"
+				)}
 			</div>
 		);
 	}

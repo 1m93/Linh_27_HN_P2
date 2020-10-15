@@ -1,0 +1,108 @@
+.Admin
+    position: relative
+    .container
+        width: 90%
+    table
+        width: 100%
+        border-collapse: collapse
+        th, td
+            +createBorder(1px, $GrayColor)
+            text-align: center
+            padding: $xsSpace
+    .pagination
+        margin: $lgSpace 0
+        ul
+            justify-content: center
+            button
+                color: white
+            button.Mui-selected
+                background: $PrimaryColor
+    button
+        border: none
+        outline: none
+        cursor: pointer
+    header
+        .menu
+            display: none
+        .tabs
+            margin-top: $mdSpace
+            +flexDisplay(center)
+            &__item
+                padding: $smSpace $mdSpace
+                text-transform: uppercase
+                cursor: pointer
+                transition: 0.5s
+                display: flex
+                align-items: center
+                border-bottom: $xsSpace solid $BackgroundColor
+                svg
+                    margin-right: $smSpace
+                svg, p
+                    color: $TextColor
+                &--active, &:hover
+                    border-bottom: $xsSpace solid $PrimaryColor
+                    svg, p
+                        color: white
+    main
+        min-height: 100vh
+        .ProductsManage, .CategoriesManage, .UsersManage
+            .head
+                +flexDisplay(space-between)
+                align-items: center
+                margin-bottom: $lgSpace
+                &__btn
+                    padding: $smSpace
+                    background: $PrimaryColor
+                &__option
+                    display: flex
+                    input, select
+                        padding: $smSpace
+                        border: none
+                        outline: none
+                        background: $GrayColor
+                        color: white
+                    input
+                        margin-right: $lgSpace
+                        width: 250px
+                    select
+                        margin-left: $xsSpace
+            .content
+                &__edit, &__delete
+                    cursor: pointer
+                &__edit
+                    color: green
+                &__delete
+                    color: $AlertColor
+        .ProductsManage
+            .modal
+                height: 100vh 
+                overflow-y: auto
+                transform: none
+                &__body > *
+                    margin-bottom: $mdSpace
+                &__image, &__detail, &__check
+                    +flexDisplay(space-between)
+                &__image p
+                    margin-bottom: $xsSpace
+                &__detail > div
+                    flex-basis: 32%
+                &__check-item
+                    p
+                        margin-bottom: $xsSpace
+                    & > div
+                        margin-bottom: $xsSpace
+                        input
+                            margin-right: $xsSpace
+                textarea
+                    width: 100%
+                    color: white
+                    background: $FormInputColor
+                    border: none
+                    outline: none
+                    padding: $mdSpace
+                    &::placeholder
+                        color: $TextColor
+                        font-weight: 600
+        .CategoriesManage
+            .modal
+                height: auto

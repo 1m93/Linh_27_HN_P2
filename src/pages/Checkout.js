@@ -69,7 +69,7 @@ function Checkout(props) {
 								className="modal__body-item-logo"
 								alt="logo"
 							/>
-							<p className="modal__body-item-title">Credit Card</p>
+							<p className="modal__body-item-title">Paypal</p>
 						</div>
 					</div>
 				</div>

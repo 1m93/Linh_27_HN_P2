@@ -1,0 +1,46 @@
+.modalWrapper
+    position: absolute
+    width: 100%
+    top: 0
+    bottom: 0
+    left: 0
+    z-index: 100000
+    background-color: rgba(0,0,0,0.7)
+    .modal
+        padding: $lgSpace
+        +createBorder(1px, $TextColor)
+        transform: translateY(40%)
+        background: $BackgroundColor
+        width: 700px
+        height: 400px
+        margin: auto
+        &__head
+            padding-bottom: $mdSpace
+            margin-bottom: $xlSpace
+            +flexDisplay(space-between)
+            align-items: center
+            border-bottom: 4px solid $PrimaryColor
+            &-left
+                text-transform: uppercase
+            &-right
+                cursor: pointer
+        &__foot
+            text-align: right
+            button
+                outline: none
+                border: none
+                font-size: 1em
+                padding: $smSpace $mdSpace
+                cursor: pointer
+                transition: 0.5s
+                &:hover
+                    opacity: 0.8
+            &-cancel
+                background: $GrayColor
+                margin-right: $mdSpace
+            &-submit
+                background: $TextColor
+                color: $GrayColor
+                &--active
+                    background: $PrimaryColor
+                    color: white

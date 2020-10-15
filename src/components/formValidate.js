@@ -13,6 +13,9 @@ export const repasswordValidate = (password, repassword) => {
 };
 
 export const checkAllTrue = (obj) => {
-	for (var o in obj) if (!obj[o]) return false;
+	const key = ["email", "password", "firstname", "lastname", "phone"];
+	for (let i = 0; i < key.length; i++) {
+		if (!obj[key[i]]) return false;
+	}
 	return true;
-}
+};

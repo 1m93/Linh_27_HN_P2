@@ -34,22 +34,29 @@ function Navbar() {
 			</div>
 			<div className="navbar__right">
 				{userinfo ? (
-					<div to="#" className="navbar__right-profile">
-						<div className="navbar__right-profile-button">
-							<img src={userinfo.avatar} alt="avatar" />
-							<Link to="#">{`${userinfo.firstname} ${userinfo.lastname}`}</Link>
-						</div>
-						<div className="navbar__right-profile-list">
-							<Link to="/profile">Account</Link>
-							<Link to="/cart">
-								Cart <span>({userinfo.cart.length})</span>
-							</Link>
-							<Link to="/order">
-								Order
-							</Link>
-							<Link to="#" onClick={() => handleSignOut()}>
-								Sign out
-							</Link>
+					<div className="navbar__right-wrapper">
+						{userinfo.isAdmin ? (
+							<div className="navbar__right-admin">
+								<Link to="/admin">Admin</Link>
+							</div>
+						) : (
+							""
+						)}
+						<div to="#" className="navbar__right-profile">
+							<div className="navbar__right-profile-button">
+								<img src={userinfo.avatar} alt="avatar" />
+								<Link to="#">{`${userinfo.firstname} ${userinfo.lastname}`}</Link>
+							</div>
+							<div className="navbar__right-profile-list">
+								<Link to="/profile">Account</Link>
+								<Link to="/cart">
+									Cart <span>({userinfo.cart.length})</span>
+								</Link>
+								<Link to="/order">Order</Link>
+								<Link to="#" onClick={() => handleSignOut()}>
+									Sign out
+								</Link>
+							</div>
 						</div>
 					</div>
 				) : (

@@ -284,7 +284,7 @@ function ProductDetail() {
 						</div>
 
 						{/* Recently Viewed */}
-						{userinfo && userinfo.viewedProducts.length > 0 ? (
+						{userinfo && userinfo.viewedProducts.length > 0 && productId ? (
 							<div className="detail__recently">
 								<div>Recently Viewed</div>
 								<div className="detail__recently-list">

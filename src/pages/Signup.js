@@ -27,6 +27,7 @@ function Signup() {
 		cart: [],
 		ratedProducts: {},
 		viewedProducts: [],
+		isAdmin: false,
 	});
 	const dispatch = useDispatch();
 	const [repassword, SetRepassword] = useState("");

@@ -13,6 +13,7 @@ import Cart from "./pages/Cart";
 import Thanks from "./pages/Thanks";
 import Order from "./pages/Order";
 import Profile from "./pages/Profile";
+import Admin from "./pages/Admin";
 
 function App() {
 	const dispatch = useDispatch();
@@ -43,6 +44,9 @@ function App() {
 					</Route>
 					<Route exact path="/thanks">
 						<Thanks />
+					</Route>
+					<Route exact path="/admin">
+						{userinfo.isAdmin ? <Admin /> : ""}
 					</Route>
 					<Route exact path="/browse">
 						<BrowsePage />

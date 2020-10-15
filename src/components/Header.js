@@ -7,6 +7,7 @@ function Header(props) {
 		<header>
 			<Navbar />
 			<Menu title={props.title} />
+			{props.children}
 		</header>
 	);
 }

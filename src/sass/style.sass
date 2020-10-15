@@ -1,12 +1,12 @@
 @import '_mixins', '_variables'
-    
+
 *
     margin: 0
     padding: 0
     box-sizing: border-box
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif
 
-body 
+body
     background-color: $BackgroundColor
 
 .container
@@ -16,33 +16,33 @@ body
 p, span, a, div, button, input
     color: white
 
-a 
+a
     text-decoration: none
 
-main 
+main
     padding-top: 150px
 
-.loadingbar 
+.loadingbar
     background: black !important
-    & > div 
+    & > div
         background: $PrimaryColor
 
-.loadingCircle 
+.loadingCircle
     circle
         color: white
 
-.error 
+.error
     text-transform: uppercase
-    color: red 
+    color: red
     text-align: center
 
 .endContent
     margin-bottom: 3rem
 
-.title 
+.title
     font-size: 1.3em
     margin-bottom: 1rem
-    
+
 ::-webkit-scrollbar
     width: $smSpace
 
@@ -51,7 +51,7 @@ main
 
 ::-webkit-scrollbar-thumb
     background: $GrayColor
-    &:hover 
+    &:hover
         background: $TextColor
 
-@import 'components/header', 'components/footer', 'pages/homepage', 'pages/browsepage', 'pages/productDetail', 'pages/form', 'pages/cart', 'pages/checkout', 'pages/thanks', 'pages/orders', 'pages/profile'
+@import 'components/header', 'components/footer', 'components/modal','pages/homepage', 'pages/browsepage', 'pages/productDetail', 'pages/form', 'pages/cart', 'pages/checkout', 'pages/thanks', 'pages/orders', 'pages/profile', 'pages/admin'
